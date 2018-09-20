@@ -7,7 +7,7 @@ h1 {
 
 p {
     font-size: 1.5em;
-    margin: 5% 15%;
+    margin: 40px 15%;
 }
 
 button {
@@ -39,7 +39,7 @@ button:active {
 
 #container {
     height: 100%;
-    font-family: 'Palatino Linotype';
+    font-family: 'Roboto', sans-serif;
 }
 
 #upperSection {
