@@ -1,0 +1,13 @@
+{
+  "type": "static",
+  "static": {
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "alias": "world-of-wander"
+}
+
