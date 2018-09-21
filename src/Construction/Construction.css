@@ -3,11 +3,15 @@ h1 {
     vertical-align: middle;
     text-align: center;
     font-size: 5em;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 p {
     font-size: 1.5em;
     margin: 40px 15%;
+    background-color: rgba(238, 238, 238, 0.2);
+    box-shadow: 0px 0px 70px rgba(238, 238, 238, 0.5);
 }
 
 button {
@@ -62,7 +66,7 @@ button:active {
     right: 0;
     top: 0;
     height: 100%;
-    width: 80%;
+    width: 90%;
     background-size: cover;
     background-position: center center;
 }
@@ -70,7 +74,6 @@ button:active {
 #snowImageGradient {
     width: 100%;
     height: 100%;
-    background: radial-gradient(at 70% 300%, transparent 55%,#eee 85%);
 }
 
 #lowerSectionContent {
@@ -84,9 +87,9 @@ button:active {
     right: 10%;
     left: 10%;
     text-align: center;
-    background: radial-gradient(ellipse at center, #eee 30%, transparent 75%);
 }
 
 html, body, #root {
     background-color: #eee;
+    overflow: hidden;
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SnowImageAsset from '../assets/snow.jpg'
+import SnowImageAsset from '../assets/snow.png'
+import GradientOverlay from '../assets/gradientOverlay.png'
 import './Construction.css'
 
 class Construction extends Component {
@@ -20,8 +21,7 @@ class Construction extends Component {
                 </div>
                 <div id='lowerSection'>
                     <div id='snowImage' style={{ backgroundImage: "url(" + SnowImageAsset + ")" }}>
-                        <div id='snowImageGradient'>
-                        </div>
+                        <img id='snowImageGradient' src={GradientOverlay} />
                     </div>
                     <div id='lowerSectionContent'>
                         <div id='lowerSectionText'>
