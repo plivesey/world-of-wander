@@ -20,6 +20,7 @@ button {
     height: 80px;
     left: 50%;
     margin-left: -120px;
+    margin-bottom: 20px;
     background-color: #4eb158;
     border-radius: 0.5em;
     border: none;
@@ -57,7 +58,7 @@ button:active {
 #lowerSection {
     position: relative;
     width: 100%;
-    height: 70%;
+    min-height: 70%;
     background-color: #eee;
 }
 
@@ -91,4 +92,21 @@ button:active {
 
 html, body, #root {
     background-color: #eee;
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 1em;
+        width: 200px;
+        height: 60px;
+        margin-left: -100px;
+    }
+}
