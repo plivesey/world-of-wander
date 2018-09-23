@@ -1,4 +1,4 @@
-h1 {
+#constructionTitle {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -7,14 +7,14 @@ h1 {
     padding-left: 20px;
 }
 
-p {
+.constructionText {
     font-size: 1.5em;
     margin: 40px 15%;
     background-color: rgba(238, 238, 238, 0.2);
     box-shadow: 0px 0px 70px rgba(238, 238, 238, 0.5);
 }
 
-button {
+#submitButton {
     position: absolute;
     width: 240px;
     height: 80px;
@@ -31,12 +31,12 @@ button {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-button:hover, button:focus {
+#submitButton:hover, #submitButton:focus {
     background-color: #46a04f;
     outline: none;
 }
 
-button:active {
+#submitButton:active {
     background-color: #3e8e46;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     color: #eee;
@@ -95,15 +95,15 @@ html, body, #root {
 }
 
 @media only screen and (max-width: 600px) {
-    h1 {
+    #constructionTitle {
         font-size: 3em;
     }
 
-    p {
+    .constructionText {
         font-size: 1em;
     }
 
-    button {
+    #submitButton {
         font-size: 1em;
         width: 200px;
         height: 60px;

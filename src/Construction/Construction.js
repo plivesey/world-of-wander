@@ -17,7 +17,7 @@ class Construction extends Component {
         return (
             <div id='container'>
                 <div id='upperSection'>
-                    <h1>World of Wander</h1>
+                    <h1 id='constructionTitle'>World of Wander</h1>
                 </div>
                 <div id='lowerSection'>
                     <div id='snowImage' style={{ backgroundImage: "url(" + SnowImageAsset + ")" }}>
@@ -25,14 +25,14 @@ class Construction extends Component {
                     </div>
                     <div id='lowerSectionContent'>
                         <div id='lowerSectionText'>
-                            <p>
+                            <p class='constructionText'>
                                 We leave for Vietnam on October 3rd. We'll be releasing our blog soon!
                             </p>
-                            <p>
+                            <p class='constructionText'>
                                 If you want to be know when we release the blog, sign up to our email list.
                             </p>
                         </div>
-                        <button onClick={() => {this.signUp()}}>Sign Up!</button>
+                        <button id='submitButton' onClick={() => {this.signUp()}}>Sign Up!</button>
                     </div>
                 </div>
             </div>

@@ -2,27 +2,96 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+header {
+  position: relative;
+  background-color: #fff;
+  height: 180px;
+  width: 100%;
 }
 
-.App-header {
+#title {
+  position: absolute;
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  width: 60%;
+  left: 20%;
+  right: 20%;
+  margin: 40px;
+}
+
+#header {
   background-color: #222;
   height: 150px;
   padding: 20px;
   color: white;
 }
 
-.App-title {
-  font-size: 1.5em;
+#map {
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 40%;
 }
 
-.App-intro {
-  font-size: large;
+.CountryButton {
+  position: absolute;
+  background: transparent;
+  border: none;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.CountryButton div {
+  display: none;
+}
+
+.CountryButton:hover div {
+  display: inline;
+}
+
+#iceland {
+  left: 30%;
+  width: 25%;
+  /* 25 * 327/472 * 2.5 */
+  height: 43.2997881356%;
+  top: 5%;
+}
+
+#uk {
+  right: 30%;
+  width: 15%;
+  /* 15 * 385/284 * 2.5 */
+  height: 50.8362676056%;
+  top: 0%;
+}
+
+#pnw {
+  left: 18%;
+  width: 15%;
+  /* 15 * 417/317 * 2.5 */
+  height: 49.3296529968%;
+  top: 40%;
+}
+
+#france {
+  left: 37.5%;
+  width: 25%;
+  /* 25 * 399/444 * 2.5 */
+  height: 56.1655405405%;
+  top: 40%;
+}
+
+#seAsia {
+  right: 10%;
+  width: 20%;
+  /* 15 * 613/408 * 2.5 */
+  height: 56.3419117647%;
+  top: 40%;
 }
