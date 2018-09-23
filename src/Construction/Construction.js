@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import SnowImageAsset from '../assets/snow.png'
 import GradientOverlay from '../assets/gradientOverlay.png'
 import './Construction.css'
@@ -10,7 +10,7 @@ class Construction extends Component {
         const message = 'Just send the email and we\'ll add you! 😀 🎉'
         const mailToLink = 'mailto:' + email + '?subject=' + subject + '&body=' + message
 
-        window.open(mailToLink, 'emailWindow');
+        window.open(mailToLink, 'emailWindow')
     }
 
     render() {
@@ -21,7 +21,7 @@ class Construction extends Component {
                 </div>
                 <div id='lowerSection'>
                     <div id='snowImage' style={{ backgroundImage: "url(" + SnowImageAsset + ")" }}>
-                        <img id='snowImageGradient' src={GradientOverlay} />
+                        <img id='snowImageGradient' alt='' src={GradientOverlay} />
                     </div>
                     <div id='lowerSectionContent'>
                         <div id='lowerSectionText'>

@@ -1,4 +1,4 @@
-html, body, #root {
+html, body, #root, #router {
   margin: 0;
   height: 100%;
 }
