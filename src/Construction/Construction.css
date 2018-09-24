@@ -90,10 +90,6 @@
     text-align: center;
 }
 
-html, body, #root {
-    background-color: #eee;
-}
-
 @media only screen and (max-width: 600px) {
     #constructionTitle {
         font-size: 3em;
