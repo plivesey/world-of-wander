@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as ReactRouter, Route, Link } from "react-router-dom"
+import { BrowserRouter as ReactRouter, Route } from "react-router-dom"
 import Construction from './Construction/Construction.js'
 import App from './App/App.js'
 

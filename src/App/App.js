@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import Slider from 'react-slick'
+
 import './App.css'
 import './Map.css'
 import './ComeMeetUs.css'
 import './StayUpToDate.css'
+import './LatestPosts.css'
 
 import MapBackground from '../assets/mapBackground.png'
 import Iceland from '../assets/iceland.png'
@@ -14,36 +17,64 @@ import StayWithUs from '../assets/stayWithUs.png'
 import ComeCaribbean from '../assets/comeCaribbean.png'
 import ComeAsia from '../assets/comeAsia.png'
 
-class HeaderBar extends Component {
-  render() {
-    return (
-      <header>
-        <h1 id='title'>World of Wander</h1>
-      </header>
-    )
-  }
+function HeaderBar() {
+  return (
+    <header>
+      <h1 id='title'>World of Wander</h1>
+    </header>
+  )
 }
 
-class CountryButton extends Component {
-  render() {
-    return (
-      <button id={this.props.id} class='CountryButton' style={{ backgroundImage: "url(" + this.props.image + ")" }}>
-        <div>{this.props.title}</div>
-      </button>
-    )
+function CountryButton(props) {
+  return (
+    <button id={props.id} class='CountryButton' style={{ backgroundImage: "url(" + props.image + ")" }}>
+      <div>{props.title}</div>
+    </button>
+  )
+}
+
+function MobileMap() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false
   }
+
+  return (
+    <div id='mobileMap'>
+      <Slider {...settings}>
+        <CountryButton id='pnw' image={PNW} title='Pacific Northwest' />
+        <CountryButton id='iceland' image={Iceland} title='Iceland' />
+        <CountryButton id='uk' image={UK} title='U.K.' />
+        <CountryButton id='france' image={France} title='France' />
+        <CountryButton id='seAsia' image={SEAsia} title='S.E. Asia' />
+      </Slider>
+    </div>
+  )
+}
+
+function DesktopMap() {
+  return (
+    <div id='desktopMap'>
+      <CountryButton id='iceland' image={Iceland} title='Iceland' />
+      <CountryButton id='uk' image={UK} title='U.K.' />
+      <CountryButton id='pnw' image={PNW} title='Pacific Northwest' />
+      <CountryButton id='france' image={France} title='France' />
+      <CountryButton id='seAsia' image={SEAsia} title='S.E. Asia' />
+    </div>
+  )
 }
 
 class Map extends Component {
   render() {
     return (
       <div id='map' style={{ backgroundImage: "url(" + MapBackground + ")" }}>
-        <CountryButton id='iceland' image={Iceland} title='Iceland' />
-        <CountryButton id='uk' image={UK} title='U.K.' />
-        <CountryButton id='pnw' image={PNW} title='Pacific Northwest' />
-        <CountryButton id='france' image={France} title='France' />
-        <CountryButton id='seAsia' image={SEAsia} title='S.E. Asia' />
-      </div>
+        <DesktopMap />
+        <MobileMap />
+      </div >
     )
   }
 }
@@ -116,6 +147,46 @@ class StayUpToDate extends Component {
   }
 }
 
+function LatestPostsRow(props) {
+  return (
+    <a class='latestPostsRow' href='post'>
+      <div class='latestPostsMonth'>{props.month}</div>
+      <div class='latestPostsDate'>{props.date}</div>
+      <div class='latestPostsDescription'>{props.description}</div>
+    </a>
+  )
+}
+
+function LatestPosts() {
+  return (
+    <div>
+      <h2 class='header2'>LATEST POSTS</h2>
+      <div class='flexCenter'>
+        <div id='latestPostsContainer'>
+          <LatestPostsRow month='Sept' date='19' description='Late summer camping in Bend' />
+          <LatestPostsRow month='Aug' date='1' description='We survived Tour de Mt Blanc' />
+          <div class='flexCenter'>
+            <a class='header2' id='latestPostsReadMore' href='readMore'>
+              READ MORE...
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Footer() {
+  return (
+    <div id='footer'>
+      <div>
+        Follow <a id='instagramLink' href='https://www.instagram.com/acavery/'>@acavery</a> on Instagram to see where we are
+      </div>
+      <iframe src="https://snapwidget.com/embed/602774" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style={{ border: 'none', overflow: 'hidden', width: '80%', height: '80px', maxWidth: '300px' }}></iframe>
+    </div>
+  )
+}
+
 class App extends Component {
   render() {
     return (
@@ -124,6 +195,8 @@ class App extends Component {
         <Map />
         <ComeMeetUs />
         <StayUpToDate />
+        <LatestPosts />
+        <Footer />
       </div>
     );
   }

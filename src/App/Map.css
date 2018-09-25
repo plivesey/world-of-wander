@@ -1,65 +1,148 @@
 #map {
-    position: relative;
-    width: 100%;
-    height: 0px;
-    padding-bottom: 40%;
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 40%;
+}
+
+#desktopMap {
+  display: block;
+}
+
+#mobileMap {
+  display: none;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-list div {
+  height: 100%;
+}
+
+.slick-slider {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 32px;
+}
+
+.CountryButton {
+  position: absolute;
+  background: transparent;
+  border: none;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  color: white;
+}
+
+.CountryButton div {
+  display: none;
+}
+
+.CountryButton:hover div {
+  display: inline;
+}
+
+#iceland {
+  left: 30%;
+  width: 25%;
+  /* 25 * 327/472 * 2.5 */
+  height: 43.2997881356%;
+  top: 5%;
+}
+
+#uk {
+  right: 30%;
+  width: 15%;
+  /* 15 * 385/284 * 2.5 */
+  height: 50.8362676056%;
+  top: 0%;
+}
+
+#pnw {
+  left: 18%;
+  width: 15%;
+  /* 15 * 417/317 * 2.5 */
+  height: 49.3296529968%;
+  top: 40%;
+}
+
+#france {
+  left: 37.5%;
+  width: 25%;
+  /* 25 * 399/444 * 2.5 */
+  height: 56.1655405405%;
+  top: 40%;
+}
+
+#seAsia {
+  right: 18%;
+  width: 15%;
+  /* 15 * 613/408 * 2.5 */
+  height: 56.3419117647%;
+  top: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  #map {
+    padding-bottom: calc(60% + 32px);
   }
-  
-  .CountryButton {
-    position: absolute;
-    background: transparent;
-    border: none;
-    background-size: cover;
-    background-position: center center;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .CountryButton div {
+
+  #desktopMap {
     display: none;
   }
-  
-  .CountryButton:hover div {
+
+  #mobileMap {
     display: inline;
   }
-  
-  #iceland {
-    left: 30%;
-    width: 25%;
-    /* 25 * 327/472 * 2.5 */
-    height: 43.2997881356%;
-    top: 5%;
+
+  .CountryButton {
+    position: relative;
   }
-  
+
+  #iceland {
+    left: 0;
+    top: 5%;
+    /* 90 * 472/327 * 0.6 */
+    width: 77.9449541284%;
+    height: 90%;
+  }
+
   #uk {
-    right: 30%;
-    width: 15%;
-    /* 15 * 385/284 * 2.5 */
-    height: 50.8362676056%;
-    top: 0%;
+    left: 0;
+    top: 5%;
+    /* 90 * 284/385 * 0.6 */
+    width: 39.8337662338%;
+    height: 90%;
   }
   
   #pnw {
-    left: 18%;
-    width: 15%;
-    /* 15 * 417/317 * 2.5 */
-    height: 49.3296529968%;
-    top: 40%;
+    left: 0;
+    top: 5%;
+    /* 90 * 317/417 * 0.6 */
+    width: 41.0503597122%;
+    height: 90%;
   }
   
   #france {
-    left: 37.5%;
-    width: 25%;
-    /* 25 * 399/444 * 2.5 */
-    height: 56.1655405405%;
-    top: 40%;
+    left: 0;
+    top: 5%;
+    /* 90 * 444/399 * 0.6 */
+    width: 60.0902255639%;
+    height: 90%;
   }
   
   #seAsia {
-    right: 18%;
-    width: 15%;
-    /* 15 * 613/408 * 2.5 */
-    height: 56.3419117647%;
-    top: 40%;
+    left: 0;
+    top: 5%;
+    /* 90 * 408/613 * 0.6 */
+    width: 35.9412724307%;
+    height: 90%;
   }
   
+}
+
