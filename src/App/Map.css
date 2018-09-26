@@ -31,16 +31,30 @@
 
 .CountryButton {
   position: absolute;
-  background: transparent;
+  background: none;
   border: none;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
   color: white;
+  transition-property: left right top bottom width height opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  outline: 0;
 }
 
 .CountryButton div {
   display: none;
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 2em;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #384B58;
 }
 
 .CountryButton:hover div {
@@ -56,7 +70,7 @@
 }
 
 #uk {
-  right: 30%;
+  left: 55%;
   width: 15%;
   /* 15 * 385/284 * 2.5 */
   height: 50.8362676056%;
@@ -80,7 +94,7 @@
 }
 
 #seAsia {
-  right: 18%;
+  left: 67%;
   width: 15%;
   /* 15 * 613/408 * 2.5 */
   height: 56.3419117647%;
