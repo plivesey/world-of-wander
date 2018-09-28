@@ -1,5 +1,10 @@
 import React, { Component } from 'react'
 import Slider from 'react-slick'
+import KeyHandler from 'react-key-handler'
+
+import HeaderBar from '../Header/Header.js'
+import Footer from '../Footer/Footer.js'
+import { postsForCountry, allPosts } from '../Posts/Posts.js'
 
 import './App.css'
 import './Map.css'
@@ -8,50 +13,50 @@ import './StayUpToDate.css'
 import './LatestPosts.css'
 
 import MapBackground from '../assets/mapBackground.png'
-import Iceland from '../assets/iceland.png'
-import UK from '../assets/uk.png'
-import France from '../assets/france.png'
-import PNW from '../assets/pnw.png'
-import SEAsia from '../assets/seAsia.png'
+import '../assets/iceland.png'
+import '../assets/uk.png'
+import '../assets/france.png'
+import '../assets/pnw.png'
+import '../assets/seAsia.png'
+import IcleandMainPhoto from '../assets/icelandMainPhoto.png'
+import IcelandDown from '../assets/icelandDown.png'
+import UKDown from '../assets/ukDown.png'
+import PeruDown from '../assets/peruDown.png'
+import PNWDown from '../assets/pnwDown.png'
+import FranceDown from '../assets/franceDown.png'
+import SEAsiaDown from '../assets/seAsiaDown.png'
 import StayWithUs from '../assets/stayWithUs.png'
 import ComeCaribbean from '../assets/comeCaribbean.png'
 import ComeAsia from '../assets/comeAsia.png'
-import IcelandDown from '../assets/icelandDown.png'
-
-function HeaderBar() {
-  return (
-    <header>
-      <h1 id='title'>World of Wander</h1>
-    </header>
-  )
-}
 
 function CountryButton(props) {
   return (
-    <button id={props.id} className='CountryButton' style={{ backgroundImage: "url(" + props.image + ")"}} onClick={() => {props.onClick(props.id)}}>
+    <button id={props.id} className='CountryButton' onClick={() => { props.onClick(props.id) }}>
       <div>{props.title}</div>
     </button>
   )
 }
 
-function MobileMap() {
+function MobileMap(props) {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: false
+    arrows: false,
+    mobileFirst: true
   }
 
   return (
     <div id='mobileMap'>
       <Slider {...settings}>
-        <CountryButton id='pnw' image={PNW} title='Pacific Northwest' />
-        <CountryButton id='iceland' image={Iceland} title='Iceland' />
-        <CountryButton id='uk' image={UK} title='U.K.' />
-        <CountryButton id='france' image={France} title='France' />
-        <CountryButton id='seAsia' image={SEAsia} title='S.E. Asia' />
+        <CountryButton id='pnw' title='Washington & Oregon' onClick={props.onClick} />
+        <CountryButton id='seAsia' title='S.E. Asia' onClick={props.onClick} />
+        <CountryButton id='france' title='France' onClick={props.onClick} />
+        <CountryButton id='uk' title='U.K.' onClick={props.onClick} />
+        <CountryButton id='iceland' title='Iceland' onClick={props.onClick} />
+        <CountryButton id='peru' title='Peru' onClick={props.onClick} />
       </Slider>
     </div>
   )
@@ -60,11 +65,45 @@ function MobileMap() {
 function DesktopMap(props) {
   return (
     <div id='desktopMap'>
-      <CountryButton id='iceland' image={Iceland} title='Iceland' onClick={props.onClick} />
-      <CountryButton id='uk' image={UK} title='U.K.' onClick={props.onClick} />
-      <CountryButton id='pnw' image={PNW} title='Pacific Northwest' onClick={props.onClick} />
-      <CountryButton id='france' image={France} title='France' onClick={props.onClick} />
-      <CountryButton id='seAsia' image={SEAsia} title='S.E. Asia' onClick={props.onClick} />
+      <CountryButton id='pnw' title='Washington & Oregon' onClick={props.onClick} />
+      <CountryButton id='seAsia' title='S.E. Asia' onClick={props.onClick} />
+      <CountryButton id='france' title='France' onClick={props.onClick} />
+      <CountryButton id='uk' title='U.K.' onClick={props.onClick} />
+      <CountryButton id='iceland' title='Iceland' onClick={props.onClick} />
+      <CountryButton id='peru' title='Peru' onClick={props.onClick} />
+    </div>
+  )
+}
+
+function MapOverlay() {
+  return (
+    <div id='mapOverlay' />
+  )
+}
+
+function MapDetailPage(props) {
+  const posts = postsForCountry(props.countryId)
+
+  const blogPostRows = posts.slice(0, 3).map((post) => {
+    return (  
+      <BlogPostRow postId={post.id} month={post.month} date={post.date} description={post.title} />
+    )
+  })
+
+  return (
+    <div id='mapDetailPage'>
+      <div id='mapDetailContainer'>
+        <div id='detailPageImageContainer'>
+          <img id='detailPageImage' alt={props.title} src={props.image} />
+        </div>
+        <div id='detailPageTextContainer'>
+          <h2 className='header2'>{props.title}</h2>
+          {blogPostRows}
+        </div>
+      </div>
+      <button id='mapDetailBack' onClick={props.onClick}>
+        &lt; Back
+      </button>
     </div>
   )
 }
@@ -73,22 +112,47 @@ class Map extends Component {
   constructor() {
     super()
 
+    this.state = {}
+
     this.onClick = this.onClick.bind(this)
+  }
+
+  detailPageProps() {
+    if (this.state.countryId === 'iceland') {
+      return {
+        id: 'iceland',
+        image: IcleandMainPhoto,
+        title: 'Iceland'
+      }
+    } else {
+      return {
+        id: 'iceland',
+        image: IcleandMainPhoto,
+        title: 'Iceland'
+      }
+    }
   }
 
   onClick(countryId) {
     if (!this.state.highlightedCountry) {
-      this.setState({'highlightedCountry': countryId})
+      this.setState({ 'highlightedCountry': countryId })
     } else {
-      this.setState({'highlightedCountry': undefined})
+      this.setState({ 'highlightedCountry': undefined })
     }
   }
 
   render() {
+    const detailPageProps = this.detailPageProps()
     return (
       <div id='map' style={{ backgroundImage: "url(" + MapBackground + ")" }}>
+        <KeyHandler
+          keyValue='Escape'
+          onKeyHandle={() => {this.onClick(null)}}
+        />
         <DesktopMap onClick={this.onClick} />
         <MobileMap onClick={this.onClick} />
+        <MapOverlay />
+        <MapDetailPage countryId={detailPageProps.id} image={detailPageProps.image} title={detailPageProps.title} onClick={() => this.onClick(null)} />
       </div >
     )
   }
@@ -96,25 +160,46 @@ class Map extends Component {
   componentDidMount() {
     [].forEach.call(document.getElementsByClassName('CountryButton'), (element) => {
       const key = 'original-' + element.id
-      this.setState({[key]: {
-        top: element.style.top,
-        left: element.style.left,
-        right: element.style.right,
-        bottom: element.style.bottom,
-        width: element.style.width,
-        height: element.style.height
-      }})
+      this.setState({
+        [key]: {
+          top: element.style.top,
+          left: element.style.left,
+          right: element.style.right,
+          bottom: element.style.bottom,
+          width: element.style.width,
+          height: element.style.height,
+          backgroundImage: element.style.backgroundImage
+        }
+      })
     })
   }
 
+  highlightImageForCountryId(id) {
+    if (id === 'iceland') {
+      return IcelandDown
+    } else if (id === 'uk') {
+      return UKDown
+    } else if (id === 'peru') {
+      return PeruDown
+    } else if (id === 'pnw') {
+      return PNWDown
+    } else if (id === 'france') {
+      return FranceDown
+    } else if (id === 'seAsia') {
+      return SEAsiaDown
+    } else {
+      return ''
+    }
+  }
+
   componentDidUpdate() {
-    var countryId = this.state.highlightedCountry
+    const countryId = this.state.highlightedCountry
 
     if (countryId) {
       [].forEach.call(document.getElementsByClassName('CountryButton'), (element) => {
         element.style.opacity = 0
       })
-  
+
       const country = document.getElementById(countryId)
       country.style.opacity = 1
       country.style.top = 0
@@ -123,13 +208,28 @@ class Map extends Component {
       country.style.bottom = 0
       country.style.width = '100%'
       country.style.height = '100%'
+      country.style.backgroundImage = 'url(' + this.highlightImageForCountryId(countryId) + ')'
+      country.children[0].style.opacity = 0
+
+      const overlay = document.getElementById('mapOverlay')
+      overlay.style.opacity = 0.7
+
+      const detailPage = document.getElementById('mapDetailPage')
+      detailPage.style.top = '0%';
     } else {
       [].forEach.call(document.getElementsByClassName('CountryButton'), (element) => {
         const key = 'original-' + element.id
         const originalStyle = this.state[key]
-        Object.keys(originalStyle).forEach(function(key) { element.style[key] = originalStyle[key]; });
+        Object.keys(originalStyle).forEach(function (key) { element.style[key] = originalStyle[key]; });
         element.style.opacity = 1
+        element.children[0].style.opacity = 1
       })
+
+      const overlay = document.getElementById('mapOverlay')
+      overlay.style.opacity = 0
+
+      const detailPage = document.getElementById('mapDetailPage')
+      detailPage.style.top = '100%';
     }
   }
 }
@@ -202,9 +302,9 @@ class StayUpToDate extends Component {
   }
 }
 
-function LatestPostsRow(props) {
+function BlogPostRow(props) {
   return (
-    <a className='latestPostsRow' href='post'>
+    <a className='latestPostsRow' href={'/post/' + props.postId}>
       <div className='latestPostsMonth'>{props.month}</div>
       <div className='latestPostsDate'>{props.date}</div>
       <div className='latestPostsDescription'>{props.description}</div>
@@ -213,13 +313,18 @@ function LatestPostsRow(props) {
 }
 
 function LatestPosts() {
+  const blogPostRows = allPosts.slice(0, 5).map((post) => {
+    return (
+      <BlogPostRow postId={post.id} month={post.month} date={post.date} description={post.title} />
+    )
+  })
+
   return (
     <div>
       <h2 className='header2'>LATEST POSTS</h2>
       <div className='flexCenter'>
         <div id='latestPostsContainer'>
-          <LatestPostsRow month='Sept' date='19' description='Late summer camping in Bend' />
-          <LatestPostsRow month='Aug' date='1' description='We survived Tour de Mt Blanc' />
+          {blogPostRows}
           <div className='flexCenter'>
             <a className='header2' id='latestPostsReadMore' href='readMore'>
               READ MORE...
@@ -227,17 +332,6 @@ function LatestPosts() {
           </div>
         </div>
       </div>
-    </div>
-  )
-}
-
-function Footer() {
-  return (
-    <div id='footer'>
-      <div>
-        Follow <a id='instagramLink' href='https://www.instagram.com/acavery/'>@acavery</a> on Instagram to see where we are
-      </div>
-      <iframe title='Instagram' src="https://snapwidget.com/embed/602774" className="snapwidget-widget" allowtransparency="true" frameBorder="0" scrolling="no" style={{ border: 'none', overflow: 'hidden', width: '80%', height: '80px', maxWidth: '300px' }}></iframe>
     </div>
   )
 }
@@ -257,4 +351,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App

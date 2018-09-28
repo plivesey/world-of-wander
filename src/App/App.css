@@ -2,63 +2,12 @@
   text-align: center;
 }
 
-header {
-  position: relative;
-  background-color: #fff;
-  height: 180px;
-  width: 100%;
-}
-
 .flexCenter {
   position: relative;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-#title {
-  position: absolute;
-  font-family: 'Amatic SC';
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 80px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  width: 100%;
-  left: 0;
-  right: 0;
-  margin: 40px;
-}
-
-#header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-#footer {
-  margin-top: 40px;
-  background: #384B58;
-  color: white;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 1em;
-  text-align: center;
-  letter-spacing: 0.1em;
-}
-
-#footer div {
-  padding: 20px;
-}
-
-#instagramLink {
-  text-decoration: none;
-  color: white;
 }
 
 .header2 {
@@ -78,20 +27,6 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-  header {
-    height: auto;
-  }
-
-  #title {
-    position: relative;
-    width: calc(100% - 40px);
-    left: 0;
-    right: 0;
-    padding: 20px;
-    margin: 0;
-    font-size: 60px;
-  }
-
   .header2 {
     font-size: 2em;
   }

@@ -1,0 +1,22 @@
+#footer {
+    margin-top: 40px;
+    background: #384B58;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  
+  #footer div {
+    padding: 20px;
+  }
+  
+  #instagramLink {
+    text-decoration: none;
+    color: white;
+  }
+  

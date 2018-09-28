@@ -3,6 +3,7 @@
   width: 100%;
   height: 0px;
   padding-bottom: 40%;
+  overflow: hidden;
 }
 
 #desktopMap {
@@ -11,6 +12,86 @@
 
 #mobileMap {
   display: none;
+}
+
+#mapOverlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(229, 229, 229, 1);
+  opacity: 0;
+  pointer-events: none;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+#mapDetailContainer {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 4em);
+
+  display: flex;
+  flex-direction: row;
+}
+
+#mapDetailPage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  top: 100%;
+  transition-property: top;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+#mapDetailBack {
+  position: relative;
+  height: 2em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  color: #3E3E3E;
+  margin: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#mapDetailBack:focus {
+  outline: none;
+}
+
+#detailPageTextContainer {
+  background-color: white;
+  opacity: 0.7;
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-right: 3%;
+  min-width: 50%;
+}
+
+#detailPageImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#detailPageImage {
+  position: relative;
+  width: 88%;
+  left: 6%;
 }
 
 .slick-list {
@@ -55,6 +136,10 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #384B58;
+  transition-property: div;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  padding: 4px;
 }
 
 .CountryButton:hover div {
@@ -62,43 +147,81 @@
 }
 
 #iceland {
-  left: 30%;
+  background-image: url('../assets/iceland.png');
+  left: 32%;
   width: 25%;
   /* 25 * 327/472 * 2.5 */
   height: 43.2997881356%;
   top: 5%;
 }
 
+#iceland:hover {
+  background-image: url('../assets/icelandDown.png');
+}
+
 #uk {
-  left: 55%;
+  background-image: url('../assets/uk.png');
+  left: 58%;
   width: 15%;
   /* 15 * 385/284 * 2.5 */
   height: 50.8362676056%;
   top: 0%;
 }
 
+#uk:hover {
+  background-image: url('../assets/ukDown.png');
+}
+
 #pnw {
-  left: 18%;
-  width: 15%;
-  /* 15 * 417/317 * 2.5 */
-  height: 49.3296529968%;
-  top: 40%;
+  background-image: url('../assets/pnw.png');
+  left: 14%;
+  width: 14%;
+  /* 14 * 417/317 * 2.5 */
+  height: 46.0410094637%;
+  top: 4%;
+}
+
+#pnw:hover {
+  background-image: url('../assets/pnwDown.png');
 }
 
 #france {
-  left: 37.5%;
+  background-image: url('../assets/france.png');
+  left: 40%;
   width: 25%;
   /* 25 * 399/444 * 2.5 */
   height: 56.1655405405%;
   top: 40%;
 }
 
+#france:hover {
+  background-image: url('../assets/franceDown.png');
+}
+
 #seAsia {
-  left: 67%;
+  background-image: url('../assets/seAsia.png');
+  left: 70%;
   width: 15%;
   /* 15 * 613/408 * 2.5 */
   height: 56.3419117647%;
   top: 40%;
+}
+
+#seAsia:hover {
+  background-image: url('../assets/seAsiaDown.png');
+}
+
+#peru {
+  background-image: url('../assets/peru.png');
+  left: 24%;
+  width: 15%;
+  /* 15 * 449/298 * 2.5 */
+  height: 56.5016778523%;
+  top: 40%;
+}
+
+#peru:hover {
+  background-image: url('../assets/peruDown.png');
 }
 
 @media only screen and (max-width: 600px) {
@@ -112,6 +235,15 @@
 
   #mobileMap {
     display: inline;
+  }
+
+  #detailPageTextContainer {
+    width: 90%;
+    margin: 3%;
+  }
+
+  #detailPageImageContainer {
+    display: none;
   }
 
   .CountryButton {
@@ -158,5 +290,12 @@
     height: 90%;
   }
   
+  #peru {
+    left: 0;
+    top: 5%;
+    /* 90 * 298/449 * 0.6 */
+    width: 35.8396436526%;
+    height: 90%;
+  }
 }
 
