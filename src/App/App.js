@@ -159,7 +159,7 @@ class Map extends Component {
 
   highlightImageForCountryId(id) {
     if (id === 'iceland') {
-      return 'https://plivesey.github.io/world-of-wander-images/home/icleandDown.png'
+      return 'https://plivesey.github.io/world-of-wander-images/home/icelandDown.png'
     } else if (id === 'uk') {
       return 'https://plivesey.github.io/world-of-wander-images/home/ukDown.png'
     } else if (id === 'peru') {

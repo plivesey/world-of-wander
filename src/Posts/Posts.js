@@ -84,9 +84,7 @@ const icelandPost = {
             header: 'The Semi-Natural'
         },
         {
-            text: (
-                <div><u>Seljavallalaug</u></div>
-            )
+            subheader: 'Seljavallalaug'
         },
         {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/hotPots/Seljavallalaug2.jpg'
@@ -108,9 +106,7 @@ const icelandPost = {
             detailText: 'The walk to Seljavallalaug.'
         },
         {
-            text: (
-                <div><u>Reykjafjarðarlaug</u></div>
-            )
+            subheader: 'Reykjafjarðarlaug'
         },
         {
             text: (
@@ -134,9 +130,7 @@ const icelandPost = {
             header: 'The Wilderness Ones'
         },
         {
-            text: (
-                <div><u>Landmannalaugar</u></div>
-            )
+            subheader: 'Landmannalaugar'
         },
         {
             text: (
@@ -167,9 +161,7 @@ const icelandPost = {
             detailText: 'Sunset at Landmannalaugar. Photo credit: Katie Ingram, who we met on the trip.'
         },
         {
-            text: (
-                <div><u>Landbrotalaug</u></div>
-            )
+            subheader: 'Landbrotalaug'
         },
         {
             text: (
@@ -203,9 +195,7 @@ const icelandPost = {
             )
         },
         {
-            text: (
-                <div><u>Laugarvellir</u></div>
-            )
+            subheader: 'Laugarvellir'
         },
         {
             text: (
@@ -229,9 +219,7 @@ const icelandPost = {
             )
         },
         {
-            text: (
-                <div><u>Fosslaug</u></div>
-            )
+            subheader: 'Fosslaug'
         },
         {
             text: (
@@ -252,9 +240,7 @@ const icelandPost = {
             detailText: 'The foss (waterfall) at Fosslaug: Rekjafoss.'
         },
         {
-            text: (
-                <div><u>Hellulaug</u></div>
-            )
+            subheader: 'Hellulaug'
         },
         {
             text: (
@@ -269,9 +255,7 @@ const icelandPost = {
             header: 'The Spas'
         },
         {
-            text: (
-                <div><u>Laugarvatn Fontana</u></div>
-            )
+            subheader: 'Laugarvatn Fontana'
         },
         {
             text: (
@@ -289,9 +273,7 @@ const icelandPost = {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/hotPots/LaugarvatnFontana.jpg',
         },
         {
-            text: (
-                <div><u>Blue Lagoon</u></div>
-            )
+            subheader: 'Blue Lagoon'
         },
         {
             text: (

@@ -6,6 +6,18 @@
   overflow: hidden;
 }
 
+/* This should preload these images to reduce flicker */
+#map::after {
+  content:
+    url('https://plivesey.github.io/world-of-wander-images/home/icelandDown.png')
+    url('https://plivesey.github.io/world-of-wander-images/home/ukDown.png')
+    url('https://plivesey.github.io/world-of-wander-images/home/pnwDown.png')
+    url('https://plivesey.github.io/world-of-wander-images/home/peruDown.png')
+    url('https://plivesey.github.io/world-of-wander-images/home/ukDown.png')
+    url('https://plivesey.github.io/world-of-wander-images/home/seAsiaDown.png');
+  display: none;
+}
+
 #desktopMap {
   display: block;
 }

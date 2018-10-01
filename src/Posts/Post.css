@@ -16,20 +16,29 @@
 }
 
 .postContent {
-    padding: 20px 0;
+    padding: 0 0 40px 0;
 }
 
 .postLargeImage {
     width: 100%;
 }
 
+.postHeader {
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-weight: 500;
+}
+
 .postSubheader {
     margin: 0;
-    padding: 40px 0 0 0;
+    padding: 20px 0 40px 0;
+    font-weight: 500;
 }
 
 .postDetailText {
     padding: 0px 0 20px 0;
+    font-size: 0.8em;
+    line-height: 1em;
 }
 
 #postContentContainer {
@@ -39,7 +48,7 @@
     flex-direction: column;
     justify-content: center;
     background: white;
-    padding: 20px;
+    padding: 40px;
     width: 80%;
     max-width: 1000px;
 
@@ -50,6 +59,7 @@
     line-height: normal;
     font-size: 1.2em;
     margin-bottom: 32px;
+    line-height: 1.4em;
 }
 
 #backToAllPosts {
@@ -71,12 +81,22 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 32px;
+    margin-bottom: 52px;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 600px) {
-    .postContent {
-        text-align: justify;
-        text-justify: distribute;
+    #postDateContainer {
+        font-size: 0.8em;
+        margin-bottom: 32px;
+    }
+
+    #postTitle {
+        font-size: 2em;
+    }
+
+    #postContentContainer {
+        width: 100%;
+        padding: 0 20px;
     }
 }
