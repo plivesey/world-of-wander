@@ -12,23 +12,6 @@ import './ComeMeetUs.css'
 import './StayUpToDate.css'
 import './LatestPosts.css'
 
-import MapBackground from '../assets/mapBackground.png'
-import '../assets/iceland.png'
-import '../assets/uk.png'
-import '../assets/france.png'
-import '../assets/pnw.png'
-import '../assets/seAsia.png'
-import IcleandMainPhoto from '../assets/icelandMainPhoto.png'
-import IcelandDown from '../assets/icelandDown.png'
-import UKDown from '../assets/ukDown.png'
-import PeruDown from '../assets/peruDown.png'
-import PNWDown from '../assets/pnwDown.png'
-import FranceDown from '../assets/franceDown.png'
-import SEAsiaDown from '../assets/seAsiaDown.png'
-import StayWithUs from '../assets/stayWithUs.png'
-import ComeCaribbean from '../assets/comeCaribbean.png'
-import ComeAsia from '../assets/comeAsia.png'
-
 function CountryButton(props) {
   return (
     <button id={props.id} className='CountryButton' onClick={() => { props.onClick(props.id) }}>
@@ -85,8 +68,8 @@ function MapDetailPage(props) {
   const posts = postsForCountry(props.countryId)
 
   const blogPostRows = posts.slice(0, 3).map((post) => {
-    return (  
-      <BlogPostRow postId={post.id} month={post.month} date={post.date} description={post.title} />
+    return (
+      <BlogPostRow postId={post.id} type={post.type} month={post.month} date={post.date} description={post.title} />
     )
   })
 
@@ -121,13 +104,13 @@ class Map extends Component {
     if (this.state.countryId === 'iceland') {
       return {
         id: 'iceland',
-        image: IcleandMainPhoto,
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/icelandMainPhoto.png',
         title: 'Iceland'
       }
     } else {
       return {
         id: 'iceland',
-        image: IcleandMainPhoto,
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/icelandMainPhoto.png',
         title: 'Iceland'
       }
     }
@@ -144,10 +127,10 @@ class Map extends Component {
   render() {
     const detailPageProps = this.detailPageProps()
     return (
-      <div id='map' style={{ backgroundImage: "url(" + MapBackground + ")" }}>
+      <div id='map' style={{ backgroundImage: 'url("https://plivesey.github.io/world-of-wander-images/home/mapBackground.png")' }}>
         <KeyHandler
           keyValue='Escape'
-          onKeyHandle={() => {this.onClick(null)}}
+          onKeyHandle={() => { this.onClick(null) }}
         />
         <DesktopMap onClick={this.onClick} />
         <MobileMap onClick={this.onClick} />
@@ -176,17 +159,17 @@ class Map extends Component {
 
   highlightImageForCountryId(id) {
     if (id === 'iceland') {
-      return IcelandDown
+      return 'https://plivesey.github.io/world-of-wander-images/home/icleandDown.png'
     } else if (id === 'uk') {
-      return UKDown
+      return 'https://plivesey.github.io/world-of-wander-images/home/ukDown.png'
     } else if (id === 'peru') {
-      return PeruDown
+      return 'https://plivesey.github.io/world-of-wander-images/home/peruDown.png'
     } else if (id === 'pnw') {
-      return PNWDown
+      return 'https://plivesey.github.io/world-of-wander-images/home/pnwDown.png'
     } else if (id === 'france') {
-      return FranceDown
+      return 'https://plivesey.github.io/world-of-wander-images/home/franceDown.png'
     } else if (id === 'seAsia') {
-      return SEAsiaDown
+      return 'https://plivesey.github.io/world-of-wander-images/home/seAsiaDown.png'
     } else {
       return ''
     }
@@ -265,13 +248,13 @@ class ComeMeetUs extends Component {
         </div>
         <div className='comeMeetUsLocationContainer'>
           <ComeMeetUsLocationRow
-            image={ComeAsia}
+            image='https://plivesey.github.io/world-of-wander-images/home/comeAsia.png'
             title='Southeast Asia'
             text='Based in Vietnam, Oct 2018 - April 2019'
             link='https://www.google.com/flights/#flt=SFO..2018-10-10*.SFO.2018-10-14;c:USD;e:1;sd:0;er:80046474.960554778.244369736.1224226653;t:e'
           />
           <ComeMeetUsLocationRow
-            image={ComeCaribbean}
+            image='https://plivesey.github.io/world-of-wander-images/home/comeCaribbean.png'
             title='The Caribbean'
             text='British Virgin Islands, April 2019'
             link='https://www.google.com/flights/#flt=SFO..2018-10-10*.SFO.2018-10-14;c:USD;e:1;sd:0;er:140768132.-709389298.222320682.-577553360;t:e'
@@ -294,7 +277,7 @@ class StayUpToDate extends Component {
 
   render() {
     return (
-      <div id='stayUpToDate' style={{ backgroundImage: "url(" + StayWithUs + ")" }}>
+      <div id='stayUpToDate' style={{ backgroundImage: 'url("https://plivesey.github.io/world-of-wander-images/home/stayWithUs.jpg")' }}>
         <h2 className='header2'>STAY UP TO DATE</h2>
         <button onClick={() => { this.signUp() }}>Get Emails From Us</button>
       </div>
@@ -302,9 +285,9 @@ class StayUpToDate extends Component {
   }
 }
 
-function BlogPostRow(props) {
+export function BlogPostRow(props) {
   return (
-    <a className='latestPostsRow' href={'/post/' + props.postId}>
+    <a className='latestPostsRow' href={'/' + props.type + '/' + props.postId}>
       <div className='latestPostsMonth'>{props.month}</div>
       <div className='latestPostsDate'>{props.date}</div>
       <div className='latestPostsDescription'>{props.description}</div>
@@ -313,20 +296,23 @@ function BlogPostRow(props) {
 }
 
 function LatestPosts() {
-  const blogPostRows = allPosts.slice(0, 5).map((post) => {
-    return (
-      <BlogPostRow postId={post.id} month={post.month} date={post.date} description={post.title} />
-    )
-  })
+  const blogPostRows = allPosts
+    .filter((post) => { return post.type === 'post' })
+    .slice(0, 5)
+    .map((post) => {
+      return (
+        <BlogPostRow postId={post.id} type={post.type} month={post.month} date={post.date} description={post.title} />
+      )
+    })
 
   return (
     <div>
       <h2 className='header2'>LATEST POSTS</h2>
-      <div className='flexCenter'>
+      <div className='flexCenterHorizontal'>
         <div id='latestPostsContainer'>
           {blogPostRows}
-          <div className='flexCenter'>
-            <a className='header2' id='latestPostsReadMore' href='readMore'>
+          <div className='flexCenterHorizontal'>
+            <a className='header2' id='latestPostsReadMore' href='/allPosts'>
               READ MORE...
             </a>
           </div>

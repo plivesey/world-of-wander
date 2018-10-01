@@ -147,7 +147,7 @@
 }
 
 #iceland {
-  background-image: url('../assets/iceland.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/iceland.png');
   left: 32%;
   width: 25%;
   /* 25 * 327/472 * 2.5 */
@@ -156,11 +156,11 @@
 }
 
 #iceland:hover {
-  background-image: url('../assets/icelandDown.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/icelandDown.png');
 }
 
 #uk {
-  background-image: url('../assets/uk.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/uk.png');
   left: 58%;
   width: 15%;
   /* 15 * 385/284 * 2.5 */
@@ -169,11 +169,11 @@
 }
 
 #uk:hover {
-  background-image: url('../assets/ukDown.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/ukDown.png');
 }
 
 #pnw {
-  background-image: url('../assets/pnw.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/pnw.png');
   left: 14%;
   width: 14%;
   /* 14 * 417/317 * 2.5 */
@@ -182,11 +182,11 @@
 }
 
 #pnw:hover {
-  background-image: url('../assets/pnwDown.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/pnwDown.png');
 }
 
 #france {
-  background-image: url('../assets/france.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/france.png');
   left: 40%;
   width: 25%;
   /* 25 * 399/444 * 2.5 */
@@ -195,11 +195,11 @@
 }
 
 #france:hover {
-  background-image: url('../assets/franceDown.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/franceDown.png');
 }
 
 #seAsia {
-  background-image: url('../assets/seAsia.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/seAsia.png');
   left: 70%;
   width: 15%;
   /* 15 * 613/408 * 2.5 */
@@ -208,11 +208,11 @@
 }
 
 #seAsia:hover {
-  background-image: url('../assets/seAsiaDown.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/seAsiaDown.png');
 }
 
 #peru {
-  background-image: url('../assets/peru.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/peru.png');
   left: 24%;
   width: 15%;
   /* 15 * 449/298 * 2.5 */
@@ -221,7 +221,7 @@
 }
 
 #peru:hover {
-  background-image: url('../assets/peruDown.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/peruDown.png');
 }
 
 @media only screen and (max-width: 600px) {

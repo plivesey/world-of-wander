@@ -1,0 +1,18 @@
+#allPostsContainer {
+    padding: 20px 80px;
+}
+
+#allPostsTitle {
+    margin: 8px 12px;
+    text-align: left;
+}
+
+.allPostsPadding {
+    padding: 12px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #allPostsContainer {
+        padding: 20px 12px;
+    }
+}

@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer.js'
 import { postForId } from './Posts.js'
 
 import './Post.css'
+import '../App/App.css'
 
 class Post extends Component {
     render() {
@@ -30,18 +31,43 @@ class Post extends Component {
             dateSection = (<div></div>)
         }
 
+        const contentSections = post.content.map((content) => {
+            if (content.text) {
+                return (
+                    <div className='postContent'>{content.text}</div>
+                )
+            } else if (content.image) {
+                var subtitle = ''
+                if (content.detailText) {
+                    subtitle = (
+                        <div className='postDetailText'><i>{content.detailText}</i></div>
+                    )
+                }
+                return (
+                    <div>
+                        <img className='postLargeImage' src={content.image} alt='Failed to load' />
+                        {subtitle}
+                    </div>
+                )
+            } else if (content.header) {
+                return (
+                    <h3 className='postSubheader'>{content.header}</h3>
+                )
+            } else {
+                return <div></div>
+            }
+        })
+
         return (
             <div>
                 <HeaderBar />
                 <div id='postContainer'>
-                    <div id='mainImage' style={{backgroundImage: 'url(' + post.coverImage + ')'}}/>
-                    <div id='postContentContainer'>
-                        <div id='postContent'>
+                    <div id='mainImage' style={{ backgroundImage: 'url(' + post.coverImage + ')' }} />
+                    <div class='flexCenterHorizontal'>
+                        <div id='postContentContainer'>
                             <h2 id='postTitle'>{post.title}</h2>
                             {dateSection}
-                            <div id='importedPostContent'>
-                               {post.content}
-                            </div>
+                            {contentSections}
                         </div>
                     </div>
                 </div>

@@ -1,20 +1,41 @@
 header {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  
     background-color: #fff;
     height: 180px;
-    width: 100%;
     margin: 0;
 }
 
-#header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#headerLogoLink {
+  padding: 0 20px;
+  margin: 0;
 }
 
-#title {
-  position: absolute;
+#aboutLink {
+  text-decoration: none;
+  padding: 0 20px;
+  margin: 0;
+  color: black;
+}
+
+#aboutHeader {
+  width: 120px;
+  font-size: 2em;
+}
+
+#headerLogoImage {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/logo.png');
+  background-size: cover;
+  background-position: center center;
+  height: 80px;
+  width: 80px;
+  margin: 0;
+}
+
+#headerTitle {
   font-family: 'Amatic SC';
   font-style: normal;
   font-weight: normal;
@@ -22,9 +43,7 @@ header {
   font-size: 80px;
   text-align: center;
   letter-spacing: 0.1em;
-  left: 0;
-  right: 0;
-  margin: 40px;
+  margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -32,13 +51,21 @@ header {
     height: auto;
   }
 
-  #title {
-    position: relative;
-    width: calc(100% - 40px);
-    left: 0;
-    right: 0;
-    padding: 20px;
-    margin: 0;
-    font-size: 60px;
+  #headerTitle {
+    font-size: 48px;
+  }
+
+  #headerLogoImage {
+    height: 40px;
+    width: 40px;
+  }
+
+  #aboutLink {
+    padding: 0 0;
+  }  
+
+  #aboutHeader {
+    width: 80px;
+    font-size: 1.2em;
   }
 }

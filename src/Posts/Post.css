@@ -15,11 +15,41 @@
     padding-top: 35%;
 }
 
+.postContent {
+    padding: 20px 0;
+}
+
+.postLargeImage {
+    width: 100%;
+}
+
+.postSubheader {
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+.postDetailText {
+    padding: 0px 0 20px 0;
+}
+
 #postContentContainer {
     position: relative;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    background: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+
+    font-family: 'Roboto';
+    text-align: left;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 1.2em;
+    margin-bottom: 32px;
 }
 
 #backToAllPosts {
@@ -27,29 +57,7 @@
     color: black;
 }
 
-#postContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: white;
-    padding: 20px;
-    width: 80%;
-    max-width: 800px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-}
-
-#importedPostContent div {
-    margin-bottom: 32px;
-}
-
 #postTitle {
-    text-align: center;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -64,4 +72,11 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+    .postContent {
+        text-align: justify;
+        text-justify: distribute;
+    }
 }
