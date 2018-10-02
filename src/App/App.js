@@ -136,6 +136,12 @@ class Map extends Component {
         <MobileMap onClick={this.onClick} />
         <MapOverlay />
         <MapDetailPage countryId={detailPageProps.id} image={detailPageProps.image} title={detailPageProps.title} onClick={() => this.onClick(null)} />
+        <link rel="preload" href={this.highlightImageForCountryId('pnw')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('iceland')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('uk')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('peru')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('france')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('seAsia')} as="image" />
       </div >
     )
   }
