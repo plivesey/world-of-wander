@@ -1,12 +1,14 @@
 #latestPostsContainer {
     position: relative;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    top: 20px;
 }
 
 .latestPostsRow {
+    position: relative;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     margin: 12px;
@@ -16,6 +18,7 @@
 }
 
 .latestPostsMonth {
+    flex-shrink: 0;
     font-family: 'Amatic SC';
     font-style: normal;
     font-weight: normal;
@@ -23,10 +26,11 @@
     font-size: 1.5em;
     text-align: left;
     letter-spacing: 0.1em;
-    width: 1.8em;
+    width: 2em;
 }
 
 .latestPostsDate {
+    flex-shrink: 0;
     font-family: 'Amatic SC';
     font-style: normal;
     font-weight: bold;
@@ -46,6 +50,9 @@
     font-size: 1em;
     letter-spacing: 0.1em;
     height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 #latestPostsReadMore {
@@ -54,4 +61,10 @@
     font-size: 1.5em;
     text-decoration: none;
     color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .latestPostsDescription {
+        font-size: 0.8em;
+    }
 }

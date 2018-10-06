@@ -4,6 +4,7 @@
   height: 0px;
   padding-bottom: 40%;
   overflow: hidden;
+  background-size: cover;
 }
 
 #desktopMap {
@@ -148,11 +149,11 @@
 
 #iceland {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/iceland.png');
-  left: 32%;
+  left: 25%;
   width: 25%;
   /* 25 * 327/472 * 2.5 */
   height: 43.2997881356%;
-  top: 5%;
+  top: 2%;
 }
 
 #iceland:hover {
@@ -162,9 +163,9 @@
 #uk {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/uk.png');
   left: 58%;
-  width: 15%;
-  /* 15 * 385/284 * 2.5 */
-  height: 50.8362676056%;
+  width: 12%;
+  /* 12 * 385/284 * 2.5 */
+  height: 40.6690140845%;
   top: 0%;
 }
 
@@ -174,11 +175,11 @@
 
 #pnw {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/pnw.png');
-  left: 14%;
+  left: 12%;
   width: 14%;
   /* 14 * 417/317 * 2.5 */
   height: 46.0410094637%;
-  top: 4%;
+  top: 40%;
 }
 
 #pnw:hover {
@@ -187,11 +188,11 @@
 
 #france {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/france.png');
-  left: 40%;
-  width: 25%;
-  /* 25 * 399/444 * 2.5 */
-  height: 56.1655405405%;
-  top: 40%;
+  left: 43%;
+  width: 22%;
+  /* 22 * 399/444 * 2.5 */
+  height: 49.4256756757%;
+  top: 35%;
 }
 
 #france:hover {
@@ -201,10 +202,10 @@
 #seAsia {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/seAsia.png');
   left: 70%;
-  width: 15%;
-  /* 15 * 613/408 * 2.5 */
-  height: 56.3419117647%;
-  top: 40%;
+  width: 18%;
+  /* 18 * 617/406 * 2.5 */
+  height: 68.3866995074%;
+  top: 30%;
 }
 
 #seAsia:hover {
@@ -213,15 +214,40 @@
 
 #peru {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/peru.png');
-  left: 24%;
+  left: 29%;
   width: 15%;
-  /* 15 * 449/298 * 2.5 */
-  height: 56.5016778523%;
-  top: 40%;
+  /* 15 * 405/305 * 2.5 */
+  height: 49.7950819672%;
+  top: 48%;
 }
 
 #peru:hover {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/peruDown.png');
+}
+
+@media only screen and (max-width: 940px) {
+  #detailPageTextContainer {
+    width: 90%;
+    margin: 3%;
+  }
+
+  #detailPageImageContainer {
+    display: none;
+  }
+
+  #detailPageTextContainerHeader {
+    margin: 10px 0;
+  }
+
+  #mapDetailBack {
+    position: relative;
+    height: 1.2em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 0.8em;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -235,15 +261,6 @@
 
   #mobileMap {
     display: inline;
-  }
-
-  #detailPageTextContainer {
-    width: 90%;
-    margin: 3%;
-  }
-
-  #detailPageImageContainer {
-    display: none;
   }
 
   .CountryButton {

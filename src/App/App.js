@@ -34,8 +34,8 @@ function MobileMap(props) {
   return (
     <div id='mobileMap'>
       <Slider {...settings}>
-        <CountryButton id='pnw' title='Washington & Oregon' onClick={props.onClick} />
         <CountryButton id='seAsia' title='S.E. Asia' onClick={props.onClick} />
+        <CountryButton id='pnw' title='Washington & Oregon' onClick={props.onClick} />
         <CountryButton id='france' title='France' onClick={props.onClick} />
         <CountryButton id='uk' title='U.K.' onClick={props.onClick} />
         <CountryButton id='iceland' title='Iceland' onClick={props.onClick} />
@@ -80,7 +80,7 @@ function MapDetailPage(props) {
           <img id='detailPageImage' alt={props.title} src={props.image} />
         </div>
         <div id='detailPageTextContainer'>
-          <h2 className='header2'>{props.title}</h2>
+          <h2 className='header2' id='detailPageTextContainerHeader'>{props.title}</h2>
           {blogPostRows}
         </div>
       </div>
@@ -101,16 +101,46 @@ class Map extends Component {
   }
 
   detailPageProps() {
-    if (this.state.countryId === 'iceland') {
+    if (this.state.highlightedCountry === 'iceland') {
       return {
         id: 'iceland',
-        image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/icelandMainPhoto.png',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/Iceland.jpg',
         title: 'Iceland'
+      }
+    } else if (this.state.highlightedCountry === 'peru') {
+      return {
+        id: 'peru',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/peru/Peru.jpg',
+        title: 'Peru'
+      }
+    } else if (this.state.highlightedCountry === 'france') {
+      return {
+        id: 'france',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/france/France.jpg',
+        title: 'France'
+      }
+    } else if (this.state.highlightedCountry === 'pnw') {
+      return {
+        id: 'pnw',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/pnw/PNW.jpg',
+        title: 'Pacific Northwest'
+      }
+    } else if (this.state.highlightedCountry === 'uk') {
+      return {
+        id: 'uk',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/uk/UK.jpg',
+        title: 'U.K.'
+      }
+    } else if (this.state.highlightedCountry === 'seAsia') {
+      return {
+        id: 'seAsia',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/SEAsia.jpg',
+        title: 'Southeast Asia'
       }
     } else {
       return {
         id: 'iceland',
-        image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/icelandMainPhoto.png',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/Iceland.jpg',
         title: 'Iceland'
       }
     }

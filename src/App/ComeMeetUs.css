@@ -32,6 +32,7 @@
 .comeMeetUsLocationRowLeft {
     flex-basis: 30%;
     height: 100%;
+    flex-shrink: 1;
     background-size: cover;
     background-position: center center;
     line-height: 100px;
@@ -54,6 +55,7 @@
     flex-direction: column;
     justify-content: center;
     flex-basis: 70%;
+    flex-shrink: 3;
     height: 100%;
     padding-left: 40px;
     text-align: left;
@@ -97,3 +99,25 @@
     color: #3a6788;
 }
 
+@media only screen and (max-width: 600px) {
+    .comeMeetUsLocationRow {
+        height: 80px;
+        margin: 8px 16px;
+    }
+
+    .comeMeetUsLocationRowRight h3 {
+        font-size: 1em;
+    }
+    
+    .comeMeetUsLocationRowRight p {
+        font-size: 0.7em;
+    }
+    
+    .comeMeetUsLocationRowRight a {
+        font-size: 0.7em;
+    }
+
+    .comeMeetUsLocationRowRight {
+        padding-left: 20px;
+    }
+}
