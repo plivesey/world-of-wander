@@ -107,7 +107,10 @@ const machuPichu = {
             )
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/peru/MachuPicchu/Vertical.jpg', 'https://plivesey.github.io/world-of-wander-images/posts/peru/MachuPicchu/HuyanaPicchuView.jpg']
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/peru/MachuPicchu/Vertical.jpg'
+        },
+        {
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/peru/MachuPicchu/HuyanaPicchuView.jpg'
         },
         {
             text: (

@@ -5,9 +5,9 @@ const laugavegur = {
     type: 'post',
     countryId: 'iceland',
     title: 'The Laugavegur Trek',
-    longDate: 'July 2, 2018',
+    longDate: 'July 1, 2018',
     month: 'July',
-    date: '2',
+    date: '1',
     coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/laugavegur/Qorikancha.jpg',
     content: [
         {

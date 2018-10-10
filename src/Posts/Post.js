@@ -73,7 +73,7 @@ class Post extends Component {
                 <HeaderBar />
                 <div id='postContainer'>
                     <div id='mainImage' style={{ backgroundImage: 'url(' + post.coverImage + ')', backgroundPosition: post.coverImagePosition || undefined }} />
-                    <div class='flexCenterHorizontal'>
+                    <div className='flexCenterHorizontal'>
                         <div id='postContentContainer'>
                             <h2 id='postTitle'>{post.title}</h2>
                             {dateSection}

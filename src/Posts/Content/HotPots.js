@@ -5,9 +5,9 @@ const icelandPost = {
     type: 'post',
     countryId: 'iceland',
     title: 'The Hot Pots of Iceland',
-    longDate: 'July 9, 2018',
-    month: 'July',
-    date: '9',
+    longDate: 'June 28th, 2018',
+    month: 'June',
+    date: '28',
     coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/hotPots/Laugarvellir.jpg',
     coverImagePosition: 'bottom',
     content: [

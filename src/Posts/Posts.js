@@ -4,8 +4,10 @@ import peruRecs from './Content/PeruRecs.js'
 import sailingEngland from './Content/Sailing.js'
 import laugavegur from './Content/Laugavegur.js'
 import first24Vietnam from './Content/First24Vietnam.js'
-import seattle from './Content/Seattle.js';
+import seattle from './Content/Seattle.js'
 import machuPichu from './Content/MachuPichu.js'
+import sacredValley from './Content/SacredValley.js'
+import tmb from './Content/TMB.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -47,10 +49,12 @@ const icelandPhotos = {
 export const allPosts = [
     first24Vietnam,
     seattle,
+    tmb,
     sailingEngland,
     icelandPhotos,
     laugavegur,
     icelandHotPots,
+    sacredValley,
     machuPichu,
     peruRecs
 ]
