@@ -22,7 +22,6 @@ function MultiplePhotoImage(props) {
     return (
         <div className='photoImageContainer'>
             <div className='multiplePhotoImageContainer' style={{ backgroundImage: 'url(' + props.image1 + ')' }} />
-            <div className='multipleImagePadding' />
             <div className='multiplePhotoImageContainer' style={{ backgroundImage: 'url(' + props.image2 + ')' }} />
             <div className='photoPostText'>
                 {props.text}

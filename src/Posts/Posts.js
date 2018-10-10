@@ -1,8 +1,11 @@
-import React from 'react'
-
 import icelandHotPots from './Content/HotPots.js'
 import about from './Content/About.js'
 import peruRecs from './Content/PeruRecs.js'
+import sailingEngland from './Content/Sailing.js'
+import laugavegur from './Content/Laugavegur.js'
+import first24Vietnam from './Content/First24Vietnam.js'
+import seattle from './Content/Seattle.js';
+import machuPichu from './Content/MachuPichu.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -42,7 +45,12 @@ const icelandPhotos = {
 }
 
 export const allPosts = [
+    first24Vietnam,
+    seattle,
+    sailingEngland,
     icelandPhotos,
+    laugavegur,
     icelandHotPots,
+    machuPichu,
     peruRecs
 ]

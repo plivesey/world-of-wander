@@ -46,6 +46,15 @@ class Post extends Component {
                         {subtitle}
                     </div>
                 )
+            } else if (content.images) {
+                return (
+                    <div>
+                        <div className='postVerticalImageContainer'>
+                            <img className='postVerticalImage' src={content.images[0]} alt='Failed to load' />
+                            <img className='postVerticalImage' src={content.images[1]} alt='Failed to load' />
+                        </div>
+                    </div>
+                )
             } else if (content.header) {
                 return (
                     <h2 className='postHeader'>{content.header}</h2>
@@ -63,7 +72,7 @@ class Post extends Component {
             <div>
                 <HeaderBar />
                 <div id='postContainer'>
-                    <div id='mainImage' style={{ backgroundImage: 'url(' + post.coverImage + ')' }} />
+                    <div id='mainImage' style={{ backgroundImage: 'url(' + post.coverImage + ')', backgroundPosition: post.coverImagePosition || undefined }} />
                     <div class='flexCenterHorizontal'>
                         <div id='postContentContainer'>
                             <h2 id='postTitle'>{post.title}</h2>

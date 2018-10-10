@@ -120,4 +120,11 @@
     .comeMeetUsLocationRowRight {
         padding-left: 20px;
     }
+
+    #comeMeetUsText {
+        left: 10%;
+        right: 10%;
+        width: 80%;
+        margin-top: 20px;
+    }
 }

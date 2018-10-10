@@ -20,6 +20,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .singlePhotoImageContainer {
@@ -39,10 +40,6 @@
     padding-bottom: calc((40% - 4px) / 2 * 3);
     background-size: cover;
     background-position: center;
-}
-
-.multipleImagePadding {
-    width: 8px;
 }
 
 .photoPostText {

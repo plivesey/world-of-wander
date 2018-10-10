@@ -36,6 +36,10 @@
   flex-direction: row;
 }
 
+#detailPageTextContainerHeader {
+  margin: 20px 0;
+}
+
 #mapDetailPage {
   position: absolute;
   height: 100%;
@@ -81,18 +85,23 @@
   margin-bottom: 3%;
   margin-right: 3%;
   min-width: 50%;
+
+  padding: 0 12px;
 }
 
 #detailPageImageContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 40%;
 }
 
 #detailPageImage {
   position: relative;
+  min-height: 60%;
   width: 88%;
   left: 6%;
+  background-color: #E5E5E5;
 }
 
 .slick-list {
@@ -237,6 +246,7 @@
 
   #detailPageTextContainerHeader {
     margin: 10px 0;
+    font-size: 2em;
   }
 
   #mapDetailBack {

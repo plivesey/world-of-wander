@@ -64,31 +64,61 @@ function MapOverlay() {
   )
 }
 
-function MapDetailPage(props) {
-  const posts = postsForCountry(props.countryId)
+class MapDetailPage extends Component {
+  constructor() {
+    super()
 
-  const blogPostRows = posts.slice(0, 3).map((post) => {
+    this.state = {}
+
+    this.updateRowsBasedOnWindowSize.bind(this)
+  }
+
+  updateRowsBasedOnWindowSize() {
+    if (window.innerWidth < 310) {
+      this.setState({rowCount: 1})
+    } else if (window.innerWidth > 500 && window.innerWidth < 600) {
+      this.setState({rowCount: 3})
+    } else if (window.innerWidth < 800) {
+      this.setState({rowCount: 2})
+    } else if (window.innerWidth < 1200) {
+      this.setState({rowCount: 3})
+    } else {
+      this.setState({rowCount: 4})
+    }
+  }
+
+  componentDidMount() {
+    // Need to do this the first time to get the first value
+    this.updateRowsBasedOnWindowSize()
+    window.addEventListener('resize', this.updateRowsBasedOnWindowSize.bind(this))
+  }
+
+  render() {
+    const posts = postsForCountry(this.props.countryId)
+
+    const blogPostRows = posts.slice(0, this.state.rowCount || 3).map((post) => {
+      return (
+        <BlogPostRow key={post.id} postId={post.id} type={post.type} month={post.month} date={post.date} description={post.title} />
+      )
+    })
+
     return (
-      <BlogPostRow postId={post.id} type={post.type} month={post.month} date={post.date} description={post.title} />
-    )
-  })
-
-  return (
-    <div id='mapDetailPage'>
-      <div id='mapDetailContainer'>
-        <div id='detailPageImageContainer'>
-          <img id='detailPageImage' alt={props.title} src={props.image} />
+      <div id='mapDetailPage'>
+        <div id='mapDetailContainer'>
+          <div id='detailPageImageContainer'>
+            <img id='detailPageImage' key={this.props.image} alt={this.props.title} src={this.props.image} />
+          </div>
+          <div id='detailPageTextContainer'>
+            <h2 className='header2' id='detailPageTextContainerHeader'>{this.props.title}</h2>
+            {blogPostRows}
+          </div>
         </div>
-        <div id='detailPageTextContainer'>
-          <h2 className='header2' id='detailPageTextContainerHeader'>{props.title}</h2>
-          {blogPostRows}
-        </div>
-      </div>
-      <button id='mapDetailBack' onClick={props.onClick}>
-        &lt; Back
+        <button id='mapDetailBack' onClick={this.props.onClick}>
+          &lt; Back
       </button>
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 class Map extends Component {
@@ -139,18 +169,18 @@ class Map extends Component {
       }
     } else {
       return {
-        id: 'iceland',
-        image: 'https://plivesey.github.io/world-of-wander-images/posts/iceland/Iceland.jpg',
-        title: 'Iceland'
+        id: 'something-went-wrong',
+        image: '',
+        title: 'Something went wrong! Please let me know :D'
       }
     }
   }
 
   onClick(countryId) {
-    if (!this.state.highlightedCountry) {
-      this.setState({ 'highlightedCountry': countryId })
+    if (!this.state.showDetail) {
+      this.setState({ highlightedCountry: countryId, showDetail: true })
     } else {
-      this.setState({ 'highlightedCountry': undefined })
+      this.setState({ showDetail: false })
     }
   }
 
@@ -214,7 +244,7 @@ class Map extends Component {
   componentDidUpdate() {
     const countryId = this.state.highlightedCountry
 
-    if (countryId) {
+    if (countryId && this.state.showDetail) {
       [].forEach.call(document.getElementsByClassName('CountryButton'), (element) => {
         element.style.opacity = 0
       })
@@ -280,7 +310,7 @@ class ComeMeetUs extends Component {
       <div id='comeMeetUs'>
         <h2 className='header2'>COME MEET US</h2>
         <div id='comeMeetUsText'>
-          We would love for friends and family to join us for parts of our trip! We are extremely flexible, and here are the parts of the world we’re going to next:
+          We would love for friends and family to join us for parts of our trip! We are extremely flexible, and here are the parts of the world we're going to next:
         </div>
         <div className='comeMeetUsLocationContainer'>
           <ComeMeetUsLocationRow
@@ -324,9 +354,9 @@ class StayUpToDate extends Component {
 export function BlogPostRow(props) {
   return (
     <a className='latestPostsRow' href={'/' + props.type + '/' + props.postId}>
-      <div className='latestPostsMonth'>{props.month}</div>
-      <div className='latestPostsDate'>{props.date}</div>
-      <div className='latestPostsDescription'>{props.description}</div>
+      <div className='flexCenterVertical'><div className='latestPostsMonth'>{props.month}</div></div>
+      <div className='flexCenterVertical'><div className='latestPostsDate'>{props.date}</div></div>
+      <div className='flexCenterVertical'><div className='latestPostsDescription'>{props.description}</div></div>
     </a>
   )
 }
@@ -337,7 +367,7 @@ function LatestPosts() {
     .slice(0, 5)
     .map((post) => {
       return (
-        <BlogPostRow postId={post.id} type={post.type} month={post.month} date={post.date} description={post.title} />
+        <BlogPostRow key={post.id} postId={post.id} type={post.type} month={post.month} date={post.date} description={post.title} />
       )
     })
 

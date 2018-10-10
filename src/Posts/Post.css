@@ -21,6 +21,23 @@
 
 .postLargeImage {
     width: 100%;
+    background-color: #E5E5E5;
+}
+
+.postVerticalImageContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.postVerticalImage {
+    position: relative;
+    width: calc(50% - 4px);
+    height: 100%;
+    object-fit: cover;
+    background-color: #E5E5E5;
 }
 
 .postHeader {
