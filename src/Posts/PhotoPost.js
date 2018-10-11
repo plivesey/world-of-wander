@@ -12,7 +12,7 @@ function SinglePhotoImage(props) {
         <div className='photoImageContainer'>
             <div className='singlePhotoImageContainer' style={{ backgroundImage: 'url(' + props.image + ')' }} />
             <div className='photoPostText'>
-                {props.text}
+                {props.detailText}
             </div>
         </div>
     )
@@ -22,9 +22,10 @@ function MultiplePhotoImage(props) {
     return (
         <div className='photoImageContainer'>
             <div className='multiplePhotoImageContainer' style={{ backgroundImage: 'url(' + props.image1 + ')' }} />
+            <div className='multipePhotoImageSpace' />
             <div className='multiplePhotoImageContainer' style={{ backgroundImage: 'url(' + props.image2 + ')' }} />
             <div className='photoPostText'>
-                {props.text}
+                {props.detailText}
             </div>
         </div>
     )
@@ -43,13 +44,17 @@ class PhotoPost extends Component {
         }
 
         const postNodes = post.content.map((element) => {
-            if (element.images.length === 1) {
+            if (element.image) {
                 return (
-                    <SinglePhotoImage image={element.images[0]} text={element.text} />
+                    <SinglePhotoImage key={element.image} image={element.image} detailText={element.detailText} />
+                )
+            } else if (element.images) {
+                return (
+                    <MultiplePhotoImage key={element.images[0]} image1={element.images[0]} image2={element.images[1]} detailText={element.detailText} />
                 )
             } else {
                 return (
-                    <MultiplePhotoImage image1={element.images[0]} image2={element.images[1]} text={element.text} />
+                    <div>An error has occurred. Please let us know! :D</div>
                 )
             }
         })

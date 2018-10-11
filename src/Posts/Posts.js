@@ -8,6 +8,8 @@ import seattle from './Content/Seattle.js'
 import machuPichu from './Content/MachuPichu.js'
 import sacredValley from './Content/SacredValley.js'
 import tmb from './Content/TMB.js'
+import lakeDistrict from './Content/LakeDistrict.js'
+import icelandPhotos from './Content/IcelandPhotos.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -25,27 +27,6 @@ export function postsForCountry(countryId) {
     })
 }
 
-const icelandPhotos = {
-    id: 'iceland',
-    type: 'photoPost',
-    countryId: 'iceland',
-    title: 'Best of Iceland: Photos',
-    longDate: 'July 2, 2018',
-    month: 'July',
-    date: '2',
-    content: [
-        {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/iceland/icelandMainPhoto.png'],
-            text: 'Waterfalls at some place'
-        },
-        {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/iceland/icelandMainPhoto.png',
-                'https://plivesey.github.io/world-of-wander-images/posts/iceland/icelandMainPhoto.png'],
-            text: 'Waterfalls at some place'
-        }
-    ]
-}
-
 export const allPosts = [
     first24Vietnam,
     seattle,
@@ -54,6 +35,7 @@ export const allPosts = [
     icelandPhotos,
     laugavegur,
     icelandHotPots,
+    lakeDistrict,
     sacredValley,
     machuPichu,
     peruRecs

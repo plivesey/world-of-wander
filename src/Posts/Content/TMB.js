@@ -12,7 +12,7 @@ const tmb = {
     content: [
         {
             text: (
-                <div>One of our goals for our year(s) of travel is to spend more time hiking and generally outdoors. So, with minimal backpacking experience, we signed up for a trek which circles an Alp mountain range and takes 8-12 days. Sounds reasonable, right? We bought new backpacks, practiced in June with a couple of shorter treks in <a href="/posts/uk/lake-district/">England</a>, and <a href="/posts/iceland/laugavegur/">Iceland</a>, and planned for a week of relaxing in the South of France afterward.</div>
+                <div>One of our goals for our year(s) of travel is to spend more time hiking and generally outdoors. So, with minimal backpacking experience, we signed up for a trek which circles an Alp mountain range and takes 8-12 days. Sounds reasonable, right? We bought new backpacks, practiced in June with a couple of shorter treks in <a href="/posts/lake-district/">England</a>, and <a href="/posts/laugavegur/">Iceland</a>, and planned for a week of relaxing in the South of France afterward.</div>
             )
         },
         {

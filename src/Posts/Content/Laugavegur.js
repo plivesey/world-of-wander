@@ -17,7 +17,7 @@ const laugavegur = {
         },
         {
             text: (
-                <div>As far as Highlands locations go, the Laugavegur trek is both accessible and remote. Several bus companies run to the beginning, Landmannalaugar, and end, Þórsmörk. If you want to see the area and take a dip in the <a href="/posts/iceland/hot-pots-of-iceland/">Landmannalaugar hot pots</a>, Iceland by Bus does a day trip starting early in the morning, stopping at both locations, and returning you to Reykjavik in the evening. It's remote in that the trail and huts are only accessible by foot; most huts were built by hikers backpacking in the building materials.</div>
+                <div>As far as Highlands locations go, the Laugavegur trek is both accessible and remote. Several bus companies run to the beginning, Landmannalaugar, and end, Þórsmörk. If you want to see the area and take a dip in the <a href="/posts/hot-pots-of-iceland/">Landmannalaugar hot pots</a>, Iceland by Bus does a day trip starting early in the morning, stopping at both locations, and returning you to Reykjavik in the evening. It's remote in that the trail and huts are only accessible by foot; most huts were built by hikers backpacking in the building materials.</div>
             )
         },
         {
