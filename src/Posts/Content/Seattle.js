@@ -27,7 +27,7 @@ const seattle = {
         },
         {
             text: (
-                <div>Since we stayed at the same campsite for five days, I'm not going to do an entire post on Olympic National Park. It's truly huge and we barely scratched the surface; it would take years to get to all the spots on the ‘best of' hiking lists. Instead, here's a mini photo-journal of our two weeks in Washington.</div>
+                <div>Since we stayed at the same campsite for five days, I'm not going to do an entire post on Olympic National Park. It's truly huge and we barely scratched the surface; it would take years to get to all the spots on the 'best of' hiking lists. Instead, here's a mini photo-journal of our two weeks in Washington.</div>
             )
         },
         {

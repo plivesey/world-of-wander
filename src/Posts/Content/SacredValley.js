@@ -30,7 +30,7 @@ const sacredValley = {
         },
         {
             text: (
-                <div>The first thing we learned about the Incas is that the term ‘Inca civilization’ is a misnomer. The Incas were the rulers of the Quechua civilization, like the Pharaohs were to the Egyptians, and there were only 14 of them spanning a total of 94 years. The last Inca died as the Spanish were conquering Peru, and most of the technological and agricultural advances of the ancient Quechuas were lost.</div>
+                <div>The first thing we learned about the Incas is that the term 'Inca civilization’ is a misnomer. The Incas were the rulers of the Quechua civilization, like the Pharaohs were to the Egyptians, and there were only 14 of them spanning a total of 94 years. The last Inca died as the Spanish were conquering Peru, and most of the technological and agricultural advances of the ancient Quechuas were lost.</div>
             )
         },
         {
@@ -94,7 +94,7 @@ const sacredValley = {
         },
         {
             text: (
-                <div>Located just outside Cusco near Sacsayhuamán, Qenko is a holy site based on a natural rock formation. Our guide pointed to a few rock formations that are supposed to look like a condor and a snake, though it was a little difficult to make them out. ‘Qenko’ means zigzag, and the walls that were built around the natural rock formations have zigzags hewn in. In one part of the site, you can walk through a semi-underground tunnel where it is believed sacrifices and mummifications took place.</div>
+                <div>Located just outside Cusco near Sacsayhuamán, Qenko is a holy site based on a natural rock formation. Our guide pointed to a few rock formations that are supposed to look like a condor and a snake, though it was a little difficult to make them out. 'Qenko’ means zigzag, and the walls that were built around the natural rock formations have zigzags hewn in. In one part of the site, you can walk through a semi-underground tunnel where it is believed sacrifices and mummifications took place.</div>
             )
         },
         {
@@ -110,7 +110,7 @@ const sacredValley = {
         },
         {
             text: (
-                <div>Known as the Inca baths, Tambomachay is a series of structures that house aqueducts spouting water into a small pool. The source of the water is unknown (well, really it’s underground, but ‘unknown’ is more mystical) and since the flow never dries up, it is said to have special powers. Quechuas believed that bathing in it would purify you, and drinking it would bring you fertility. This small site was nearly empty of tourists and extremely peaceful when we visited.</div>
+                <div>Known as the Inca baths, Tambomachay is a series of structures that house aqueducts spouting water into a small pool. The source of the water is unknown (well, really it’s underground, but 'unknown’ is more mystical) and since the flow never dries up, it is said to have special powers. Quechuas believed that bathing in it would purify you, and drinking it would bring you fertility. This small site was nearly empty of tourists and extremely peaceful when we visited.</div>
             )
         },
         {

@@ -281,7 +281,7 @@ const tmb = {
         },
         {
             text: (
-                <div>On the way up, we’d been passed by an ultra trail runner from San Diego, Drew, whom we’d met the day before. He had originally planned to run the high route of the TMB, but it was closed. He had been walking the main route with the rest of us and had realized he didn’t actually like hiking that much — he wanted the speed and “fun” of running the hills. That afternoon he would take a bus to a place where he could run the rest of the trail. His opinion, ‘if you aren’t having fun, stop doing it,’ is something we’ll keep in mind for future travels.</div>
+                <div>On the way up, we’d been passed by an ultra trail runner from San Diego, Drew, whom we’d met the day before. He had originally planned to run the high route of the TMB, but it was closed. He had been walking the main route with the rest of us and had realized he didn’t actually like hiking that much — he wanted the speed and “fun” of running the hills. That afternoon he would take a bus to a place where he could run the rest of the trail. His opinion, 'if you aren’t having fun, stop doing it,’ is something we’ll keep in mind for future travels.</div>
             )
         },
         {

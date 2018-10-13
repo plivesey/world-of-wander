@@ -45,12 +45,12 @@ const first24Vietnam = {
         },
         {
             text: (
-                <div>First up: revive from zombie status by finding coffee. We were pretty hungry and didn't have much energy to search for a great spot, so just headed for the first place Peter found on Google Maps. It was named ‘No 1. Coffee' (in English) so you can guess that it was a little pricey, but the traditional Vietnamese-style coffee was actually really tasty. I stared into space for 20 minutes while it slowly dripped into the saucer, and didn't feel truly awake until halfway through lunch.</div>
+                <div>First up: revive from zombie status by finding coffee. We were pretty hungry and didn't have much energy to search for a great spot, so just headed for the first place Peter found on Google Maps. It was named 'No 1. Coffee' (in English) so you can guess that it was a little pricey, but the traditional Vietnamese-style coffee was actually really tasty. I stared into space for 20 minutes while it slowly dripped into the saucer, and didn't feel truly awake until halfway through lunch.</div>
             )
         },
         {
             text: (
-                <div>Luckily, we didn't have to go far to find street food. We rented an Airbnb in the Ba Dinh district, which is bustling with vendors. One thing that did surprise both of us is that street food is served seated, on tiny plastic chairs. I had pictured those food markets that Anthony Bourdain was always in, walking while eating a skewer. We'd heard that Vietnamese people take their food very seriously, and that if you ever see an empty food spot it's empty for a reason. For our first meal, we walked into the nearest spot with the word ‘Pho' on a board that had people in it at 2 p.m. Can't go wrong with pho: this was delicious, and only $3.50 for two bowls with beef and two bottled waters.</div>
+                <div>Luckily, we didn't have to go far to find street food. We rented an Airbnb in the Ba Dinh district, which is bustling with vendors. One thing that did surprise both of us is that street food is served seated, on tiny plastic chairs. I had pictured those food markets that Anthony Bourdain was always in, walking while eating a skewer. We'd heard that Vietnamese people take their food very seriously, and that if you ever see an empty food spot it's empty for a reason. For our first meal, we walked into the nearest spot with the word 'Pho' on a board that had people in it at 2 p.m. Can't go wrong with pho: this was delicious, and only $3.50 for two bowls with beef and two bottled waters.</div>
             )
         },
         {
@@ -96,7 +96,7 @@ const first24Vietnam = {
         },
         {
             text: (
-                <div>The light was gorgeous early in the morning and I'd brought my camera, so I wandered around Ba Dinh and tested out some photos. I had seen ‘Fishing Pond' on the map and made my way there, but instead discovered the <a href="https://www.tripadvisor.com/Attraction_Review-g293924-d455010-Reviews-Huu_Tiep_Lake_and_the_Downed_B_52-Hanoi.html">wreckage of a B-52 bomber</a> in the middle of the pond with a memorial plaque. A bit surreal for 7 a.m.</div>
+                <div>The light was gorgeous early in the morning and I'd brought my camera, so I wandered around Ba Dinh and tested out some photos. I had seen 'Fishing Pond' on the map and made my way there, but instead discovered the <a href="https://www.tripadvisor.com/Attraction_Review-g293924-d455010-Reviews-Huu_Tiep_Lake_and_the_Downed_B_52-Hanoi.html">wreckage of a B-52 bomber</a> in the middle of the pond with a memorial plaque. A bit surreal for 7 a.m.</div>
             )
         },
         {

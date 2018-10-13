@@ -101,7 +101,7 @@ const sailingEngland = {
         },
         {
             text: (
-                <div>Fun fact: ‘knots' are the nautical equipment of miles, a standard of measurement. But it's not an accidentally bad way to shorten ‘nautical' (nauts… get it?). It actually comes from when there were standard length ropes with knots at certain intervals, and boats would time how long it took to get from one knot to the next to know how fast they were going.</div>
+                <div>Fun fact: 'knots' are the nautical equipment of miles, a standard of measurement. But it's not an accidentally bad way to shorten 'nautical' (nauts… get it?). It actually comes from when there were standard length ropes with knots at certain intervals, and boats would time how long it took to get from one knot to the next to know how fast they were going.</div>
             )
         },
         {
