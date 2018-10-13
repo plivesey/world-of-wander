@@ -4,7 +4,7 @@ import './Footer.css'
 
 function InstagramPicture(props) {
     return (
-        <a href={'https://www.instagram.com/p/' + props.instagramId + '/?taken-by=acavery'}>
+        <a target="_blank" href={'https://www.instagram.com/p/' + props.instagramId + '/?taken-by=acavery'}>
             <img className='instragramFooterImage' src={'https://plivesey.github.io/world-of-wander-images/home/' + props.image} alt='Instagram' />
         </a>
     )
