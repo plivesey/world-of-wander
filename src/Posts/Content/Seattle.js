@@ -48,10 +48,6 @@ const seattle = {
             detailText: 'Prehistoric ferns and moss on a late afternoon hike.'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/pnw/seattle-olympic-peninsula/Moss.jpg',
-            detailText: 'Prehistoric ferns and moss on a late afternoon hike.'
-        },
-        {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/pnw/seattle-olympic-peninsula/LakeSunset.jpg',
             detailText: "Sunset at Lake Crescent. We stayed at Fairholme campground with our site about 30 yards from this spot – incredible. Only two campgrounds in Olympic National Park take reservations, and the rest are first come first serve. We arrived on a Monday at 1 p.m. and got the third-to-last spot. Go early in the morning and scope out people who are packing up to leave if you want to guarantee; if you can't find any spots at your top campground, Heart O' The Hills Campground is massive and will likely have a spot open."
         },

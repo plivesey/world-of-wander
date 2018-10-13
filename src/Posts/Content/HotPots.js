@@ -13,7 +13,7 @@ const icelandPost = {
     content: [
         {
             text: (
-                <div>Iceland is a magical place. The majority of Icelanders believe the country is populated by <a href="https://www.theatlantic.com/international/archive/2013/10/why-so-many-icelanders-still-believe-in-invisible-elves/280783/">huldufólk</a>, invisible elves. The land is unlike any other, a treeless moonscape with electric green moss-covered lava outflows and ice blue rivers ribbon across black gravel. Geothermal energy powers the island, bubbling underneath the surface and breaking free at thousands of tiny hot spring fissures. We've been obsessed since first going in 2013, and spent three weeks there at the beginning of this trip exploring more of the island.</div>
+                <div>Iceland is a magical place. The majority of Icelanders believe the country is populated by <a href="https://www.theatlantic.com/international/archive/2013/10/why-so-many-icelanders-still-believe-in-invisible-elves/280783/">huldufólk</a>, invisible elves. The land is unlike any other, a treeless moonscape with electric green moss-covered lava outflows and ice blue rivers ribboned across black gravel. Geothermal energy powers the island, bubbling underneath the surface and breaking free at thousands of tiny hot spring fissures. We've been obsessed since first going in 2013, and spent three weeks there at the beginning of this trip exploring more of the island.</div>
             )
         },
         {
@@ -86,7 +86,7 @@ const icelandPost = {
         },
         {
             text: (
-                <div>Landmannalaugar is probably the most-visited site in the highlands. It's close enough to Reykjavik that several bus companies run there, multiple times a day – a good option if you're not renting a 4x4. Since we were backpacking on the <a href='https://www.fi.is/en/hiking-trails/laugavegur'>Laugavegur trail</a> from Landmannalaugar to Þórsmörk, we booked <a href='https://www.re.is/iceland-on-your-own'>bus tickets</a> ahead of time to get there and back.
+                <div>Landmannalaugar is probably the most-visited site in the highlands. It's close enough to Reykjavik that several bus companies run there, multiple times a day – a good option if you're not renting a 4x4. Since we were backpacking on the <a href='/post/laugavegur'>Laugavegur trail</a> from Landmannalaugar to Þórsmörk, we booked <a href='https://www.re.is/iceland-on-your-own'>bus tickets</a> ahead of time to get there and back.
                 </div>
             )
         },
@@ -196,7 +196,7 @@ const icelandPost = {
         },
         {
             text: (
-                <div>Hellulaug was probably the most disappointing hot spring we went to, but that doesn't mean it's not a cool spot; we've just been spoiled by some truly incredible and sparsely visited springs a few days earlier. It has a nice view of Vatnsfjörður fjord leading out to the ocean, and you can pair it with going to the local swimming pool in Flókalundur (well sign-posted.) One note: the hot pot is not where Google Maps says it is. It's up the road about 500m north of Flókalundur on the 60. You can't see it easily from the road and we missed the sign the first time, but pull over the first spot you can on the right after you drive north past the hotel/campground.
+                <div>Hellulaug was probably the most disappointing hot spring we went to, but that doesn't mean it's not a cool spot; we'd just been spoiled by some awesome and sparsely visited springs a few days earlier. It has a nice view of Vatnsfjörður fjord leading out to the ocean, and you can pair it with going to the local swimming pool in Flókalundur (well sign-posted.) One note: the hot pot is not where Google Maps says it is. It's up the road about 500m north of Flókalundur on the 60. You can't see it easily from the road and we missed the sign the first time, but pull over the first spot you can on the right after you drive north past the hotel/campground.
                 </div>
             )
         },
@@ -250,7 +250,7 @@ const icelandPost = {
                         <li>Hveravellir (read about it <a href='https://www.extremeiceland.is/en/what-to-do-in-iceland/2828-free-hot-springs-around-iceland-exotic-bathing'>here</a>)</li>
                         <li>Gamla Laugin "Secret Lagoon" (read about it <a href='https://asideofsweet.com/hidden-hot-springs-iceland-travel/'>here</a>)</li>
                         <li>Gvendarlaug (read about it <a href='https://guidetoiceland.is/connect-with-locals/regina/hot-pools-in-the-westfjords-of-iceland'>here</a>)</li>
-                        <li>Reykjadalur (read about it <a herf='https://icelandmag.is/article/5-great-geothermal-pools-south-iceland'>here</a>, though it may be <a href='https://icelandmag.is/article/reykjadalur-geothermal-valley-closed-hikers-avoid-further-damage-vegetation'>closed</a>)</li>
+                        <li>Reykjadalur (read about it <a href='https://livelifewithaview.com/8-reasons-why-you-need-to-hike-reykjadalur-hot-springs/'>here</a>, though it may be <a href='https://icelandmag.is/article/reykjadalur-geothermal-valley-closed-hikers-avoid-further-damage-vegetation'>closed</a>)</li>
                         <li>Opnur, Hrunalaug, Kualaug, Englandshverir, Hvalfjarðarlaug (read about them <a href='https://grapevine.is/travel/traveling-on-your-own/2014/12/29/listicle-thermal-pools-in-the-south-of-iceland/'>here</a>)</li>
                     </ul>
                 </div>

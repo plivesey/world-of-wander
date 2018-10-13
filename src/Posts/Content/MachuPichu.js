@@ -95,7 +95,7 @@ const machuPichu = {
         },
         {
             text: (
-                <div>We took a 6:10 a.m. bus from Ollantaytambo to M.P. and our entry to the ruins was at 10 a.m.; this was too much time. Luckily, we figured out that you can actually enter earlier than that, or at least since there weren't too many people in April it was fine for us to go in half an hour early. Alternately, you could train in the night before to get into the ruins early in the morning, beating the rush. However, you can only take 1 tiny carry-on (a small backpack) on the train with you, so you'd need to leave your luggage at a hotel in Cusco or Ollantaytambo and take not much more than 1 change of clothes with you.</div>
+                <div>We took a 6:10 a.m. train from Ollantaytambo to M.P. and our entry to the ruins was at 10 a.m.; this was too much time. Luckily, we figured out that you can actually enter earlier than that, or at least since there weren't too many people in April it was fine for us to go in half an hour early. Alternately, you could train in the night before to get into the ruins early in the morning, beating the rush. However, you can only take 1 tiny carry-on (a small backpack) on the train with you, so you'd need to leave your luggage at a hotel in Cusco or Ollantaytambo and take not much more than 1 change of clothes with you.</div>
             )
         },
         {
@@ -150,7 +150,7 @@ const machuPichu = {
         },
         {
             text: (
-                <div>You'll need a doctor's prescription for altitude sickness pills; don't put off your appointment. You're supposed to start taking the pills 24 hours before you enter altitude (like Cusco – Lima is at sea level) and continue 2 days after leaving altitude. Bring bug spray for Machu Picchu, but there's no malaria risk. Lastly, bring Immodium for unexpected stomach issues (this applies every time you travel!)</div>
+                <div>You'll need a doctor's prescription for altitude sickness pills; don't put off your appointment. You're supposed to start taking the pills 24 hours before you enter altitude and continue 2 days after leaving altitude. Bring bug spray for Machu Picchu, but there's no malaria risk. Lastly, bring Immodium for unexpected stomach issues (this applies every time you travel!)</div>
             )
         },
         {

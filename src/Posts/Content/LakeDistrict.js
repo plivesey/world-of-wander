@@ -100,7 +100,7 @@ const lakeDistrict = {
         },
         {
             text: (
-                <div>We were using the Lake District as a warm up to the longer backpacking treks we had planned for later that summer – <a href="/posts/laugavegur">Laugavegur</a> and <a href="/posts/hiking-tour-du-mont-blanc">Tour du Mont Blanc</a>. After three days of more mountains than we'd bargained for, we were exhausted! Luckily we had a couple weeks ahead of us in England to exercise and undo our couch potato ways. Also, it was time to devour more pork pies and sticky toffee pudding.</div>
+                <div>We were using the Lake District as a warm up to the longer backpacking treks we had planned for later that summer – <a href="/post/laugavegur">Laugavegur</a> and <a href="/post/hiking-tour-du-mont-blanc">Tour du Mont Blanc</a>. After three days of more mountains than we'd bargained for, we were exhausted! Luckily we had a couple weeks ahead of us in England to exercise and undo our couch potato ways. Also, it was time to devour more pork pies and sticky toffee pudding.</div>
             )
         },
         {

@@ -8,11 +8,11 @@ const sacredValley = {
     longDate: 'June 5, 2018',
     month: 'June',
     date: '5',
-    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/ruins/MachuPicchu/CoverRuinsSacredValley.jpg',
+    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/peru/ruins/CoverRuinsSacredValley.jpg',
     content: [
         {
             text: (
-                <div>We visited Peru with my (Alice’s) family in April 2018 – yes, that was technically one month before quit our jobs and left on this adventure, but Peru was too cool not to share here. We only had one week to explore it and to get to and from <a href="/posts/planning-machu-picchu">Machu Picchu</a>, but in three days we were able to see some other incredible ruins in Cusco city and the Sacred Valley. We’d love to go back and be able to explore some of the further out spots like <a href="https://www.lonelyplanet.com/peru/choquequirao">Choquequirao</a>, <a href="https://www.lonelyplanet.com/peru/attractions/chan-chan/a/poi-sig/1165434/1327130">Chan Chan</a>, and <a href="https://www.lonelyplanet.com/peru/kuelap">Kuelap</a> – one day!</div>
+                <div>We visited Peru with my (Alice’s) family in April 2018 – yes, that was technically one month before we quit our jobs and left on this adventure, but Peru was too cool not to share here. We only had one week to explore it and to get to and from <a href="/post/planning-machu-picchu">Machu Picchu</a>, but in three days we were able to see some other incredible ruins in Cusco city and the Sacred Valley. We’d love to go back and be able to explore some of the further out spots like <a href="https://www.lonelyplanet.com/peru/choquequirao">Choquequirao</a>, <a href="https://www.lonelyplanet.com/peru/attractions/chan-chan/a/poi-sig/1165434/1327130">Chan Chan</a>, and <a href="https://www.lonelyplanet.com/peru/kuelap">Kuelap</a> – one day!</div>
             )
         },
         {

@@ -12,7 +12,7 @@ const peruRecs = {
     content: [
         {
             text: (
-                <div>When I was planning our trip to Peru, I asked everyone I knew had been there (plus some strangers in cafes) for recommendations. I got so many awesome ones for restaurants, neighborhoods, bars, and places to stay, I wanted to share the compilation so that anyone else thinking of going can use it!</div>
+                <div>When I was planning our trip to Peru, I asked everyone I knew who had been there (plus some strangers in cafes) for recommendations. I got so many awesome ones for restaurants, neighborhoods, bars, and places to stay, I wanted to share the compilation so that anyone else thinking of going can use it!</div>
             )
         },
         {

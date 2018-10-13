@@ -17,7 +17,7 @@ const laugavegur = {
         },
         {
             text: (
-                <div>As far as Highlands locations go, the Laugavegur trek is both accessible and remote. Several bus companies run to the beginning, Landmannalaugar, and end, Þórsmörk. If you want to see the area and take a dip in the <a href="/posts/hot-pots-of-iceland/">Landmannalaugar hot pots</a>, Iceland by Bus does a day trip starting early in the morning, stopping at both locations, and returning you to Reykjavik in the evening. It's remote in that the trail and huts are only accessible by foot; most huts were built by hikers backpacking in the building materials.</div>
+                <div>As far as Highlands locations go, the Laugavegur trek is both accessible and remote. Several bus companies run to the beginning, Landmannalaugar, and end, Þórsmörk. If you want to see the area and take a dip in the <a href="/post/hot-pots-of-iceland/">Landmannalaugar hot pots</a>, Iceland by Bus does a day trip starting early in the morning, stopping at both locations, and returning you to Reykjavik in the evening. It's remote in that the trail and huts are only accessible by foot; most huts were built by hikers backpacking in the building materials.</div>
             )
         },
         {
@@ -30,7 +30,7 @@ const laugavegur = {
         },
         {
             text: (
-                <div>While you can bring a tent and camp outside the huts, the weather can be awful and we opted to book beds (we still needed to bring sleeping bags.) The huts book up months in advance, since this is the most popular trek in Iceland. We were really lucky to get our spots and actually didn't know until the week before whether or not we'd be able to go, since we had booked the first week the trail would likely open but it's contingent on snow melt. Even so, all beds were taken. If you decide to go, plan it 6-9 months in advance; here's a <a href="http://frugalfrolicker.com/iceland-laugavegur-trek/">thorough post</a> and the <a href="https://www.fi.is/en/hiking-trails/laugavegur">site to book huts</a>.</div>
+                <div>While you can bring a tent and camp outside the huts, the weather can be awful and we opted to book beds (we still needed to bring sleeping bags.) The huts book up months in advance, since this is the most popular trek in Iceland. We actually didn't know until the week before the trip whether or not we'd be able to go. We had booked the first week the trail is open in late June, but the opening date is contingent on the snow melting in time. Even so, all beds were taken. If you decide to go, plan it 6-9 months in advance; here's a <a href="http://frugalfrolicker.com/iceland-laugavegur-trek/">thorough post</a> and the <a href="https://www.fi.is/en/hiking-trails/laugavegur">site to book huts</a>.</div>
             )
         },
         {
@@ -121,7 +121,7 @@ const laugavegur = {
         },
         {
             text: (
-                <div>On day 3, we crossed took off our socks and shoes, rolled up our pants, and crossed a river – three times. The freezing water isn’t the problem. It’s your bare feet on sharp rocks while keeping balance with a backpack. Misery, tears, an endless expanse of flat gravel across the valley. Just had to push through this one.</div>
+                <div>On day 3, we had to take off our socks and shoes, rolled up our pants, and crossed a river – three times. The freezing water isn’t the problem. It’s your bare feet on sharp rocks while keeping balance with a backpack. Misery, tears, an endless expanse of flat gravel across the valley. Just had to push through this one.</div>
             )
         },
         {
@@ -162,7 +162,7 @@ const laugavegur = {
         },
         {
             text: (
-                <div>We had booked an extra night in Þórsmörk so we could do day hikes around the area, but our feet hurt and we spent ost of the next day reading and relaxing instead.</div>
+                <div>We had booked an extra night in Þórsmörk so we could do day hikes around the area, but our feet hurt and we spent most of the next day reading and relaxing instead.</div>
             )
         },
         {

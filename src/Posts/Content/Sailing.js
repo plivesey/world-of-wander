@@ -41,7 +41,7 @@ const sailingEngland = {
         },
         {
             text: (
-                <div>Boats heels because of the mechanics of the sails: you position the sails such that the wind blows into them, at an angle to the direction your boat is pointed. The strength of the wind pushes the boat over while also powering it to move forward.</div>
+                <div>Boats heel because of the mechanics of the sails: you position the sails such that the wind blows into them, at an angle to the direction your boat is pointed. The strength of the wind pushes the boat over while also powering it to move forward.</div>
             )
         },
         {
@@ -65,7 +65,7 @@ const sailingEngland = {
         },
         {
             text: (
-                <div>Tacking happens when you turn the boat, causing the wind to hit the other side of the sail. This moves the sail to the other side of the boat, and the boat switches the direction it's leaning. If you're headed at a good (30-50 degree angle) to the direction the wind is blowing, it's easy. You use the steering wheel and keep the wind on the same side of the sail. But if you're headed on the exact line the wind is blowing (upwind or downwind) you'll have a problem -- the wind has to catch the sails from the side, so it can't fill the sails with wind if it's hitting them from the front or back. So, you zigzag across the line of wind to make sure the wind is filling the sails and propelling the boat forward.</div>
+                <div>Tacking happens when you turn the boat, causing the wind to hit the other side of the sail. This moves the sail to the other side of the boat, and the boat switches the direction it's leaning. If you're headed at a good (30-50 degree angle) to the direction the wind is blowing, it's easy. You use the steering wheel and keep the wind on the same side of the sail. But if you're headed upwind or downwind, you'll have a problem. The wind has to catch the sails from the side, so it can't fill the sails if it's hitting the boat from the front or back. So, you zigzag across the line of wind to make sure the wind is filling the sails and propelling the boat forward.</div>
             )
         },
         {
@@ -96,7 +96,7 @@ const sailingEngland = {
         },
         {
             text: (
-                <div>The mechanics of how to make a sailboat move in a given direction are easy enough to understand and practice, but that's a small portion of mastering the seas. Navigation can be immensely difficult, and this is another point on which I'm in awe of the Pirates of the Caribbean. To get from point A to B is not just looking at the map and making a straight line; you have to time coming in and out of inlets or bays with the direction the tides are going. We didn't plan our entire week's route beforehand so we could be flexible each day, but that meant close to half an hour of Hilary and Alastair poring over tidal maps and estimating how many knots per hour we could travel.</div>
+                <div>The mechanics of how to make a sailboat move in a given direction are easy enough to understand and practice, but that's a small portion of mastering the seas. Navigation can be immensely difficult, and this is another point on which I'm in awe of the Pirates of the Caribbean. To get from point A to B is not just looking at the map and making a straight line. You have to time coming in and out of inlets or bays with the direction the tides are going. We didn't plan our entire week's route beforehand so we could be flexible each day, but that meant close to half an hour of Hilary and Alastair poring over tidal maps and estimating how many knots per hour we could travel.</div>
             )
         },
         {

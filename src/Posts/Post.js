@@ -37,7 +37,7 @@ class Post extends Component {
                     <div className='postContent'>{content.text}</div>
                 )
             } else if (content.image) {
-                var subtitle = (
+                const subtitle = (
                     <div className='postDetailText'><i>{content.detailText || ''}</i></div>
                 )
                 return (
@@ -47,12 +47,16 @@ class Post extends Component {
                     </div>
                 )
             } else if (content.images) {
+                const subtitle = (
+                    <div className='postDetailText'><i>{content.detailText || ''}</i></div>
+                )
                 return (
                     <div>
                         <div className='postVerticalImageContainer'>
                             <img className='postVerticalImage' src={content.images[0]} alt='Failed to load' />
                             <img className='postVerticalImage' src={content.images[1]} alt='Failed to load' />
                         </div>
+                        {subtitle}
                     </div>
                 )
             } else if (content.header) {

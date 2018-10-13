@@ -1,5 +1,3 @@
-import React from 'react'
-
 const icelandPhotos = {
     id: 'best-photos-iceland',
     type: 'photoPost',
