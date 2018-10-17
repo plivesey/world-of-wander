@@ -75,15 +75,15 @@ class MapDetailPage extends Component {
 
   updateRowsBasedOnWindowSize() {
     if (window.innerWidth < 310) {
-      this.setState({rowCount: 1})
+      this.setState({ rowCount: 1 })
     } else if (window.innerWidth > 500 && window.innerWidth < 600) {
-      this.setState({rowCount: 3})
+      this.setState({ rowCount: 3 })
     } else if (window.innerWidth < 800) {
-      this.setState({rowCount: 2})
+      this.setState({ rowCount: 2 })
     } else if (window.innerWidth < 1200) {
-      this.setState({rowCount: 3})
+      this.setState({ rowCount: 3 })
     } else {
-      this.setState({rowCount: 4})
+      this.setState({ rowCount: 4 })
     }
   }
 
@@ -388,12 +388,27 @@ function LatestPosts() {
   )
 }
 
+function OneSecondVideo() {
+  return (
+    <div>
+      <h2 className='header2'>OUR TRAVELS IN 2 MINUTES</h2>
+      <div className='flexCenterHorizontal'>
+      <div id='oneSecondVideoContainer'>
+        <iframe id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/r6j2ihG2EgA?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
+          allowFullScreen />
+      </div>
+      </div>
+    </div>
+  )
+}
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <HeaderBar />
         <Map />
+        <OneSecondVideo />
         <ComeMeetUs />
         <StayUpToDate />
         <LatestPosts />
