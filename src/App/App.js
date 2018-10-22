@@ -363,7 +363,6 @@ export function BlogPostRow(props) {
 
 function LatestPosts() {
   const blogPostRows = allPosts
-    .filter((post) => { return post.type === 'post' })
     .slice(0, 5)
     .map((post) => {
       return (
