@@ -12,6 +12,7 @@ import lakeDistrict from './Content/LakeDistrict.js'
 import icelandPhotos from './Content/IcelandPhotos.js'
 import hanoi from './Content/Hanoi.js'
 import hanoiFood from './Content/HanoiFood.js'
+import ninhBinh from './Content/NinhBinh.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -30,6 +31,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    ninhBinh,
     hanoi,
     hanoiFood,
     first24Vietnam,
