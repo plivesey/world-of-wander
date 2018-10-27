@@ -127,6 +127,22 @@ const hanoiFood = {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/HanoiStreetFood/BananaRice.jpg',
         },
         {
+            header: 'Banh Mi'
+        },
+        {
+            text: (
+                <div>Of course, we'd be remiss not to mention one of Vietnam's major exports to America, the banh mi sandwich. But to be honest, (*in a whisper*) they're better in San Francisco. The banh mi is very much a product of French colonialism: a french baguette stuffed with a generous portion of paté, sliced pork, jalapeños, carrots, cucumber, and cilantro, topped with sauce. But while the banh mis from Dinosaur's in San Francisco are full of fresh flavor and pickled crunch of the vegetables, the ones here are much lighter on the fresh factor and heavy on the paté and sauce.</div>
+            )
+        },
+        {
+            text: (
+                <div>The best banh mis we found were at Banh Mi 25 in the north end of the Old Quarter (again, thank you Sergei!) Peter's favorite food in the world might be sandwiches, so we went no less than four times and used them as fuel for long bus rides out of Hanoi. But we also encountered some pretty awful ones, pressed like a Quizno's hot sandwich and devoid of any freshness – and one with a <i>hot dog</i> in it.</div>
+            )
+        },
+        {
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/HanoiStreetFood/BanhMi.jpg',
+        },
+        {
             header: 'Egg Coffee'
         },
         {
