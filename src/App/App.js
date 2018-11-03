@@ -393,7 +393,7 @@ function OneSecondVideo() {
       <h2 className='header2'>OUR TRAVELS IN 2 MINUTES</h2>
       <div className='flexCenterHorizontal'>
       <div id='oneSecondVideoContainer'>
-        <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/r6j2ihG2EgA?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
+        <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/4CGIfn1eMpk?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
           allowFullScreen />
       </div>
       </div>
