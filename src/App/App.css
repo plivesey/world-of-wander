@@ -17,6 +17,14 @@
   justify-content: center;
 }
 
+.verticallySpaceFooter {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .header2 {
   position: relative;
   font-family: 'Amatic SC';

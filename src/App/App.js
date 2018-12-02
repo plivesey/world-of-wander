@@ -4,7 +4,7 @@ import KeyHandler from 'react-key-handler'
 
 import HeaderBar from '../Header/Header.js'
 import Footer from '../Footer/Footer.js'
-import { postsForCountry, allPosts } from '../Posts/Posts.js'
+import { postsForCountry, allPosts, countryTitleForId } from '../Posts/Posts.js'
 
 import './App.css'
 import './Map.css'
@@ -15,7 +15,7 @@ import './LatestPosts.css'
 function CountryButton(props) {
   return (
     <button id={props.id} className='CountryButton' onClick={() => { props.onClick(props.id) }}>
-      <div>{props.title}</div>
+      <div>{countryTitleForId(props.id)}</div>
     </button>
   )
 }
@@ -34,12 +34,12 @@ function MobileMap(props) {
   return (
     <div id='mobileMap'>
       <Slider {...settings}>
-        <CountryButton id='seAsia' title='S.E. Asia' onClick={props.onClick} />
-        <CountryButton id='pnw' title='Washington & Oregon' onClick={props.onClick} />
-        <CountryButton id='france' title='France' onClick={props.onClick} />
-        <CountryButton id='uk' title='U.K.' onClick={props.onClick} />
-        <CountryButton id='iceland' title='Iceland' onClick={props.onClick} />
-        <CountryButton id='peru' title='Peru' onClick={props.onClick} />
+        <CountryButton id='seAsia' onClick={props.onClick} />
+        <CountryButton id='pnw' onClick={props.onClick} />
+        <CountryButton id='france' onClick={props.onClick} />
+        <CountryButton id='uk' onClick={props.onClick} />
+        <CountryButton id='iceland' onClick={props.onClick} />
+        <CountryButton id='peru' onClick={props.onClick} />
       </Slider>
     </div>
   )
@@ -48,12 +48,12 @@ function MobileMap(props) {
 function DesktopMap(props) {
   return (
     <div id='desktopMap'>
-      <CountryButton id='pnw' title='Washington & Oregon' onClick={props.onClick} />
-      <CountryButton id='seAsia' title='S.E. Asia' onClick={props.onClick} />
-      <CountryButton id='france' title='France' onClick={props.onClick} />
-      <CountryButton id='uk' title='U.K.' onClick={props.onClick} />
-      <CountryButton id='iceland' title='Iceland' onClick={props.onClick} />
-      <CountryButton id='peru' title='Peru' onClick={props.onClick} />
+      <CountryButton id='pnw' onClick={props.onClick} />
+      <CountryButton id='seAsia' onClick={props.onClick} />
+      <CountryButton id='france' onClick={props.onClick} />
+      <CountryButton id='uk' onClick={props.onClick} />
+      <CountryButton id='iceland' onClick={props.onClick} />
+      <CountryButton id='peru' onClick={props.onClick} />
     </div>
   )
 }
@@ -82,8 +82,10 @@ class MapDetailPage extends Component {
       this.setState({ rowCount: 2 })
     } else if (window.innerWidth < 1200) {
       this.setState({ rowCount: 3 })
-    } else {
+    } else if (window.innerWidth < 1500) {
       this.setState({ rowCount: 4 })
+    } else {
+      this.setState({ rowCount: 5 })
     }
   }
 
@@ -96,11 +98,26 @@ class MapDetailPage extends Component {
   render() {
     const posts = postsForCountry(this.props.countryId)
 
-    const blogPostRows = posts.slice(0, this.state.rowCount || 3).map((post) => {
+    var numberOfRows = this.state.rowCount || 3
+    const includeLoadMore = posts.length > numberOfRows
+    if (includeLoadMore) {
+      // We need to include space for the read more row
+      numberOfRows--
+    }
+
+    const blogPostRows = posts.slice(0, numberOfRows).map((post) => {
       return (
         <BlogPostRow key={post.id} postId={post.id} type={post.type} month={post.month} date={post.date} description={post.title} />
       )
     })
+
+    if (includeLoadMore) {
+      blogPostRows.push(
+        (
+          <BlogPostReadMoreRow type={this.props.countryId} />
+        )
+      )
+    }
 
     return (
       <div id='mapDetailPage'>
@@ -361,6 +378,18 @@ export function BlogPostRow(props) {
   )
 }
 
+function BlogPostReadMoreRow(props) {
+  return (
+    <a className='latestPostsRow' href={'/posts/' + props.type}>
+      <div className='flexCenterHorizontal'>
+        <div className='flexCenterVertical'>
+          <div className='header2' id='blogPostsReadMore'>READ MORE...</div>
+        </div>
+      </div>
+    </a>
+  )
+}
+
 function LatestPosts() {
   const blogPostRows = allPosts
     .slice(0, 5)
@@ -392,10 +421,10 @@ function OneSecondVideo() {
     <div>
       <h2 className='header2'>OUR TRAVELS IN 2 MINUTES</h2>
       <div className='flexCenterHorizontal'>
-      <div id='oneSecondVideoContainer'>
-        <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/4CGIfn1eMpk?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
-          allowFullScreen />
-      </div>
+        <div id='oneSecondVideoContainer'>
+          <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/4CGIfn1eMpk?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
+            allowFullScreen />
+        </div>
       </div>
     </div>
   )

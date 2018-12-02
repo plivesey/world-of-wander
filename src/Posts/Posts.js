@@ -25,6 +25,24 @@ export function postForId(id) {
     }
 }
 
+export function countryTitleForId(id) {
+    if (id === 'pnw') {
+        return 'Washington & Oregon'
+    } else if (id === 'seAsia') {
+        return 'S.E. Asia'
+    } else if (id === 'france') {
+        return 'France'
+    } else if (id === 'uk') {
+        return 'U.K.'
+    } else if (id === 'iceland') {
+        return 'Iceland'
+    } else if (id === 'peru') {
+        return 'Peru'
+    } else {
+        return '?'
+    }
+}
+
 export function postsForCountry(countryId) {
     return allPosts.filter((post) => {
         return post.countryId === countryId

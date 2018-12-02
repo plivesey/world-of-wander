@@ -14,6 +14,7 @@ class Router extends Component {
                     <Route path='/post/:id' component={Post} />
                     <Route path='/photoPost/:id' component={PhotoPost} />
                     <Route path='/allPosts' component={AllPosts} />
+                    <Route path='/posts/:countryId' component={AllPosts} />
                 </div>
             </ReactRouter>
         )
