@@ -4,7 +4,7 @@ const sixMonths = {
     id: '6-months-travel',
     type: 'post',
     countryId: 'seAsia',
-    title: 'Thoughts on Six Months of Travel',
+    title: 'Reflecting on Six Months of Travel',
     longDate: 'December 3, 2018',
     month: 'Dec',
     date: '3',
