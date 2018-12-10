@@ -16,6 +16,7 @@ import ninhBinh from './Content/NinhBinh.js'
 import muiNe from './Content/MuiNe.js'
 import sixMonths from './Content/6Months.js'
 import kohYao from './Content/KohYao.js'
+import kohLanta from './Content/KohLanta.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -52,6 +53,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    kohLanta,
     kohYao,
     sixMonths,
     muiNe,

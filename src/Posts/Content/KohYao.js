@@ -80,6 +80,14 @@ const kohYao = {
             )
         },
         {
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/kohyao/ricepaddy.jpg',
+            detailText: 'Sunset from Rice Paddy Restaurant.'
+        },
+        {
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/kohyao/thunderstorm.jpg',
+            detailText: 'The sky turned into crazy shades of fire as the thunderstorm rolled in.'
+        },
+        {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/kohyao/thakowwaterfall.jpg',
             detailText: 'Thakow Waterfall on Koh Yao Noi.'
         },
@@ -125,7 +133,14 @@ const kohYao = {
             text: (
                 <div>Our brief stop made me so glad again that we'd had the chance to visit Koh Yao instead. Of course I do feel conflicted about searching for the places that "other people don't go to" and "you need to visit before it's ruined!"; doesn't that eventually introduce more tourism and therefore destruction? I imagine that travel bloggers with large platforms feel even more conflicted, since their recommendation to see an "unseen" place can have a big effect on the number of people that go. I'm not sure what the answer is, but the Thai government's step to limit visitors to areas under stress from overtourism is a good first step.</div>
             )
-        }
+        },
+        {
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/kohyao/kohphiphi1.jpg',
+            detailText: 'When you get to the top, make sure to take a photo with the giant ‘Viewpoint 1’ sign so no one will be confused which viewpoint you were at!'
+        },
+        {
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/kohyao/kohphiphi2.jpg'
+        },
     ]
 }
 
