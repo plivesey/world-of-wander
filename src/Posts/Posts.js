@@ -18,6 +18,8 @@ import sixMonths from './Content/6Months.js'
 import kohYao from './Content/KohYao.js'
 import kohLanta from './Content/KohLanta.js'
 import dalat from './Content/Dalat.js'
+import surviving from './Content/surviving.js'
+import highlights from './Content/highlights.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -54,6 +56,8 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    surviving,
+    highlights,
     dalat,
     kohLanta,
     kohYao,
