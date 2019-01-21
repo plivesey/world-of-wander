@@ -21,6 +21,7 @@ import dalat from './Content/Dalat.js'
 import surviving from './Content/surviving.js'
 import highlights from './Content/highlights.js'
 import lanterns from './Content/lanterns.js'
+import laos from './Content/Laos.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -57,6 +58,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    laos,
     lanterns,
     surviving,
     highlights,
