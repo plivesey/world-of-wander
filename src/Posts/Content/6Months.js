@@ -17,7 +17,7 @@ const sixMonths = {
         },
         {
             text: (
-                <div>We left the length of the trip open-ended, deciding we'd see how were liking the nomadic life and how much longer we wanted to continue. A few nights ago, sitting on a beach in one of the most beautiful parts of the world, we talked about how we felt 6 months in. Since we have different perspectives and takeaways, we've each written about them below.</div>
+                <div>We left the length of the trip open-ended, deciding we'd see how we're liking the nomadic life and how much longer we wanted to continue. A few nights ago, sitting on a beach in one of the most beautiful parts of the world, we talked about how we felt 6 months in. Since we have different perspectives and takeaways, we've each written about them below.</div>
             )
         },
         {

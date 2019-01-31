@@ -24,6 +24,7 @@ import lanterns from './Content/lanterns.js'
 import laos from './Content/Laos.js'
 import laosPhotos from './Content/LaosPhotos.js'
 import chiangMai from './Content/ChiangMai.js'
+import pai from './Content/pai.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -60,6 +61,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    pai,
     laosPhotos,
     laos,
     chiangMai,
