@@ -26,6 +26,7 @@ import laosPhotos from './Content/LaosPhotos.js'
 import chiangMai from './Content/ChiangMai.js'
 import pai from './Content/pai.js'
 import hue from './Content/hue.js'
+import siemReap from './Content/siemReap.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -63,6 +64,7 @@ export function postsForCountry(countryId) {
 
 export const allPosts = [
     hue,
+    siemReap,
     pai,
     laosPhotos,
     laos,
