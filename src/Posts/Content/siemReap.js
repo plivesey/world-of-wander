@@ -152,10 +152,10 @@ const siemReap = {
             images: ['https://plivesey.github.io/world-of-wander-images/posts/seAsia/siem-reap/AT2.jpg','https://plivesey.github.io/world-of-wander-images/posts/seAsia/siem-reap/AT3.jpg'],
             detailText: 'Merilee at Boyon temple.'
         },
-        {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/seAsia/siem-reap/face1.jpg','https://plivesey.github.io/world-of-wander-images/posts/seAsia/siem-reap/face1.jpg'],
-            detailText: 'Left, the western gate to Angkor Thom, once a city of a million people. Right, Boyon temple has over 40 towers with carved faces.'
-        },
+        // {
+        //     images: ['https://plivesey.github.io/world-of-wander-images/posts/seAsia/siem-reap/face1.jpg','https://plivesey.github.io/world-of-wander-images/posts/seAsia/siem-reap/face1.jpg'],
+        //     detailText: 'Left, the western gate to Angkor Thom, once a city of a million people. Right, Boyon temple has over 40 towers with carved faces.'
+        // },
         {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/siem-reap/taprohm.jpg',
             detailText: 'Ta Prohm, with trees growing up straight through the ruins, is known as the Tomb Raider temple – it was used as a location in the film.'
