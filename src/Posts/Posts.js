@@ -27,6 +27,7 @@ import chiangMai from './Content/ChiangMai.js'
 import pai from './Content/pai.js'
 import hue from './Content/hue.js'
 import siemReap from './Content/siemReap.js'
+import saigon from './Content/saigon.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -63,6 +64,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    saigon,
     hue,
     siemReap,
     pai,
