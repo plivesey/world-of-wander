@@ -28,6 +28,8 @@ import pai from './Content/pai.js'
 import hue from './Content/hue.js'
 import siemReap from './Content/siemReap.js'
 import saigon from './Content/saigon.js'
+import nepalPhotos from './Content/nepalPhotos.js'
+import nepal from './Content/nepal.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -64,6 +66,8 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    nepal,
+    nepalPhotos,
     saigon,
     hue,
     siemReap,
