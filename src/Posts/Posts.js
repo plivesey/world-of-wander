@@ -67,7 +67,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
-    // sriLankaSouthCoast,
+    sriLankaSouthCoast,
     nepal,
     nepalPhotos,
     saigon,
