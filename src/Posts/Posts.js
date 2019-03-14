@@ -30,6 +30,7 @@ import siemReap from './Content/siemReap.js'
 import saigon from './Content/saigon.js'
 import nepalPhotos from './Content/nepalPhotos.js'
 import nepal from './Content/nepal.js'
+import sriLankaSouthCoast from './Content/sriLankaSouthCoast.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -66,6 +67,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    sriLankaSouthCoast,
     nepal,
     nepalPhotos,
     saigon,
