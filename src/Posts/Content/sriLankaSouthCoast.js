@@ -1,14 +1,14 @@
 import React from 'react'
 
 const sriLankaSouthCoast = {
-    id:  'srilanka-south-coast',
+    id:  'sriLanka-south-coast',
     type: 'post',
-    countryId: 'seAsia',
+    countryId: 'sriLanka',
     title: 'Hot & Sandy in Sri Lanka: Colombo and the South Coast',
     longDate: 'March 14, 2019',
     month: 'Mar',
     date: '14',
-    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/sl1cover.jpg',
+    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/sl1cover.jpg',
     content: [
         {
             text: (
@@ -31,16 +31,16 @@ const sriLankaSouthCoast = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/park1.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/park1.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/park2.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/park2.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/galleface.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/galleface.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/galleface2.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/galleface2.jpg'
         },
         {
             text: (
@@ -58,10 +58,10 @@ const sriLankaSouthCoast = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/koggala.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/koggala.jpg'
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/koggala2.jpg','https://plivesey.github.io/world-of-wander-images/posts/srilanka/srilanka-south-coast/galle.jpg']
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/koggala2.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/galle.jpg']
         },
         {
             text: (
@@ -78,6 +78,16 @@ const sriLankaSouthCoast = {
                 <div>If we'd had time, I would have liked to stay in Mirissa – the small bit of it we saw while driving through looked like a hippy surfer town with lots of murals and smoothie spots. If we'd had more money, I would for sure have splurged on a nice hotel with attached spa inside the Dutch fort area. (I'd recommend to mostly skip Unawatuna – mediocre and overpriced food spots, and we got scammed on a bottle of Nivea SPF 50 sunscreen that turned out to be filled with fake stuff and gave us all horrible sunburns. Win some, lose some!) Overall, we really enjoyed our time down there, and it would have been cool to go even further east towards Tangalle, the safari park of Yala, and up the eastern coast to surfer spot Arugam Bay. But it's always good to leave a few things for a potential future return!</div>
             )
         },
+        {
+            text: (
+                <div>
+                {/* <b>More from Sri Lanka:</b>
+                <a href="https://worldofwander.app/post/sriLanka-ella-kandy">Ella to Kandy: Trains and Tea Farms</a>
+                <a href="https://worldofwander.app/post/sriLanka-knuckles">Hiking Knuckles Mountain</a>
+                <a href="https://worldofwander.app/post/sriLanka-sigiriya">Peaceful Relaxation in Sigiriya</a> */}
+                </div>
+            )
+        }
 ]
 }
 

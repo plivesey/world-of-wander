@@ -34,12 +34,17 @@ function MobileMap(props) {
   return (
     <div id='mobileMap'>
       <Slider {...settings}>
+        <CountryButton id='sriLanka' onClick={props.onClick} />
+        <CountryButton id='nepal' onClick={props.onClick} />
         <CountryButton id='seAsia' onClick={props.onClick} />
         <CountryButton id='pnw' onClick={props.onClick} />
         <CountryButton id='france' onClick={props.onClick} />
         <CountryButton id='uk' onClick={props.onClick} />
         <CountryButton id='iceland' onClick={props.onClick} />
         <CountryButton id='peru' onClick={props.onClick} />
+        <CountryButton id='mAndI' onClick={props.onClick} />
+        <CountryButton id='bvi' onClick={props.onClick} />
+        <CountryButton id='eastern' onClick={props.onClick} />
       </Slider>
     </div>
   )
@@ -54,6 +59,11 @@ function DesktopMap(props) {
       <CountryButton id='uk' onClick={props.onClick} />
       <CountryButton id='iceland' onClick={props.onClick} />
       <CountryButton id='peru' onClick={props.onClick} />
+      <CountryButton id='sriLanka' onClick={props.onClick} />
+      <CountryButton id='nepal' onClick={props.onClick} />
+      <CountryButton id='mAndI' onClick={props.onClick} />
+      <CountryButton id='bvi' onClick={props.onClick} />
+      <CountryButton id='eastern' onClick={props.onClick} />
     </div>
   )
 }
@@ -184,6 +194,42 @@ class Map extends Component {
         image: 'https://plivesey.github.io/world-of-wander-images/posts/seAsia/SEAsia.jpg',
         title: 'Southeast Asia'
       }
+    } else if (this.state.highlightedCountry === 'bvi') {
+      return {
+        id: 'bvi',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/bvi/bvi.jpg',
+        title: (
+          <div>Peurto Rico & Virgin Islands<br/><br/>Coming Soon</div>
+          )
+      }
+    } else if (this.state.highlightedCountry === 'sriLanka') {
+      return {
+        id: 'sriLanka',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka.jpg',
+        title: 'Sri Lanka'
+      }
+    } else if (this.state.highlightedCountry === 'nepal') {
+      return {
+        id: 'nepal',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/nepal/nepal.jpg',
+        title: 'Nepal'
+      }
+    } else if (this.state.highlightedCountry === 'eastern') {
+      return {
+        id: 'eastern',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/eastern/eastern.jpg',
+        title: (
+          <div>Eastern Europe<br/><br/>Coming Soon</div>
+          )
+      }
+    } else if (this.state.highlightedCountry === 'mAndI') {
+      return {
+        id: 'mAndI',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/mAndI/mAndI.jpg',
+        title: (
+          <div>Malaysia & Indonesia<br/><br/>Coming Soon</div>
+          )
+      }
     } else {
       return {
         id: 'something-went-wrong',
@@ -219,6 +265,11 @@ class Map extends Component {
         <link rel="preload" href={this.highlightImageForCountryId('peru')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('france')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('seAsia')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('eastern')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('mAndI')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('nepal')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('sriLanka')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('bvi')} as="image" />
       </div >
     )
   }
@@ -248,11 +299,21 @@ class Map extends Component {
     } else if (id === 'peru') {
       return 'https://plivesey.github.io/world-of-wander-images/home/peruDown.png'
     } else if (id === 'pnw') {
-      return 'https://plivesey.github.io/world-of-wander-images/home/pnwDown.png'
+      return 'https://plivesey.github.io/world-of-wander-images/home/washingtonDown.png'
     } else if (id === 'france') {
       return 'https://plivesey.github.io/world-of-wander-images/home/franceDown.png'
     } else if (id === 'seAsia') {
       return 'https://plivesey.github.io/world-of-wander-images/home/seAsiaDown.png'
+    } else if (id === 'bvi') {
+      return 'https://plivesey.github.io/world-of-wander-images/home/bviDown.png'
+    } else if (id === 'eastern') {
+      return 'https://plivesey.github.io/world-of-wander-images/home/easternDown.png'
+    } else if (id === 'sriLanka') {
+      return 'https://plivesey.github.io/world-of-wander-images/home/sriLankaDown.png'
+    } else if (id === 'nepal') {
+      return 'https://plivesey.github.io/world-of-wander-images/home/nepalDown.png'
+    } else if (id === 'mAndI') {
+      return 'https://plivesey.github.io/world-of-wander-images/home/mAndIDown.png'
     } else {
       return ''
     }
@@ -331,16 +392,16 @@ class ComeMeetUs extends Component {
         </div>
         <div className='comeMeetUsLocationContainer'>
           <ComeMeetUsLocationRow
-            image='https://plivesey.github.io/world-of-wander-images/home/comeAsia.png'
-            title='Southeast Asia'
-            text='Based in Vietnam, Oct 2018 - April 2019'
-            link='https://www.google.com/flights/#flt=SFO..2018-10-10*.SFO.2018-10-14;c:USD;e:1;sd:0;er:80046474.960554778.244369736.1224226653;t:e'
-          />
-          <ComeMeetUsLocationRow
-            image='https://plivesey.github.io/world-of-wander-images/home/comeCaribbean.png'
+            image='https://plivesey.github.io/world-of-wander-images/posts/bvi/bvi.jpg'
             title='The Caribbean'
             text='British Virgin Islands, April 2019'
             link='https://www.google.com/flights/#flt=SFO..2018-10-10*.SFO.2018-10-14;c:USD;e:1;sd:0;er:140768132.-709389298.222320682.-577553360;t:e'
+          />
+          <ComeMeetUsLocationRow
+            image='https://plivesey.github.io/world-of-wander-images/posts/eastern/eastern.jpg'
+            title='Eastern Europe'
+            text='Poland, Czechia, Romania and ?, Summer 2019'
+            link='https://www.google.com/flights/#flt=SFO..2019-03-16*.SFO.2019-03-20;c:USD;e:1;sd:0;er:440511814.125726696.555372620.389398571;t:e'
           />
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from 'react'
 const nepal = {
     id: 'nepal',
     type: 'post',
-    countryId: 'seAsia',
+    countryId: 'nepal',
     title: 'Trekking Poon Hill in Nepal',
     longDate: 'Feb 28, 2019',
     month: 'Feb',

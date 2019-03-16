@@ -44,17 +44,27 @@ export function postForId(id) {
 
 export function countryTitleForId(id) {
     if (id === 'pnw') {
-        return 'Washington & Oregon'
+        return 'Pacific Northwest'
     } else if (id === 'seAsia') {
         return 'S.E. Asia'
     } else if (id === 'france') {
         return 'France'
     } else if (id === 'uk') {
-        return 'U.K.'
+        return 'British Isles'
     } else if (id === 'iceland') {
         return 'Iceland'
     } else if (id === 'peru') {
         return 'Peru'
+    } else if (id === 'bvi') {
+        return 'Puerto Rico & Virgin Islands'
+    } else if (id === 'nepal') {
+        return 'Nepal'
+    } else if (id === 'sriLanka') {
+        return 'Sri Lanka'
+    } else if (id === 'mAndI') {
+        return 'Malaysia & Indonesia'
+    } else if (id === 'eastern') {
+        return 'Eastern Europe'
     } else {
         return '?'
     }

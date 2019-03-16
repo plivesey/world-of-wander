@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 0px;
-  padding-bottom: 40%;
+  padding-bottom: 50%;
   overflow: hidden;
   background-size: cover;
 }
@@ -158,10 +158,10 @@
 
 #iceland {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/iceland.png');
-  left: 25%;
-  width: 25%;
-  /* 25 * 327/472 * 2.5 */
-  height: 43.2997881356%;
+  left: 18%;
+  width: 20%;
+  /* 20 * 327/472 * 2 */
+  height: 27.7118644068%;
   top: 2%;
 }
 
@@ -171,11 +171,11 @@
 
 #uk {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/uk.png');
-  left: 58%;
-  width: 12%;
-  /* 12 * 385/284 * 2.5 */
-  height: 40.6690140845%;
-  top: 0%;
+  left: 45%;
+  width: 13%;
+  /* 13 * 385/284 * 2 */
+  height: 35.2464788732%;
+  top: -2%;
 }
 
 #uk:hover {
@@ -183,25 +183,25 @@
 }
 
 #pnw {
-  background-image: url('https://plivesey.github.io/world-of-wander-images/home/pnw.png');
-  left: 12%;
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/washington.png');
+  left: 5%;
   width: 14%;
-  /* 14 * 417/317 * 2.5 */
-  height: 46.0410094637%;
-  top: 40%;
+  /* 14 * 437/562 * 2 */
+  height: 21.7722419929%;
+  top: 26%;
 }
 
 #pnw:hover {
-  background-image: url('https://plivesey.github.io/world-of-wander-images/home/pnwDown.png');
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/washingtonDown.png');
 }
 
 #france {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/france.png');
-  left: 43%;
-  width: 22%;
-  /* 22 * 399/444 * 2.5 */
-  height: 49.4256756757%;
-  top: 35%;
+  left: 32%;
+  width: 17%;
+  /* 17 * 399/444 * 2 */
+  height: 30.5540540541%;
+  top: 25%;
 }
 
 #france:hover {
@@ -210,11 +210,11 @@
 
 #seAsia {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/seAsia.png');
-  left: 70%;
-  width: 18%;
-  /* 18 * 617/406 * 2.5 */
-  height: 68.3866995074%;
-  top: 30%;
+  left: 47%;
+  width: 36%;
+  /* 36 * 814/1235 * 2 */
+  height: 47.4558704453%;
+  top: 20%;
 }
 
 #seAsia:hover {
@@ -223,15 +223,80 @@
 
 #peru {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/peru.png');
-  left: 29%;
-  width: 15%;
-  /* 15 * 405/305 * 2.5 */
-  height: 49.7950819672%;
-  top: 48%;
+  left: 5%;
+  width: 12%;
+  /* 12 * 405/305 * 2 */
+  height: 31.868852459%;
+  top: 58%;
 }
 
 #peru:hover {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/peruDown.png');
+}
+
+#nepal {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/nepal.png');
+  left: 26%;
+  width: 17%;
+  /* 17 * 443/830 * 2 */
+  height: 18.1469879518%;
+  top: 74%;
+}
+
+#nepal:hover {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/nepalDown.png');
+}
+
+#sriLanka {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/sriLanka.png');
+  left: 40%;
+  width: 28%;
+  /* 28 * 427/747 * 2 */
+  height: 32.0107095047%;
+  top: 58%;
+}
+
+#sriLanka:hover {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/sriLankaDown.png');
+}
+
+#mAndI {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/mAndI.png');
+  left: 70%;
+  width: 25%;
+  /* 25 * 580/880 * 2 */
+  height: 32.9545454545%;
+  top: 58%;
+}
+
+#mAndI:hover {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/mAndIDown.png');
+}
+
+#bvi {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/bvi.png');
+  left: 18%;
+  width: 20%;
+  /* 20 * 324/848 * 2 */
+  height: 15.2830188679%;
+  top: 53%;
+}
+
+#bvi:hover {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/bviDown.png');
+}
+
+#eastern {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/eastern.png');
+  left: 73%;
+  width: 25%;
+  /* 25 * 2567/2137 * 2 */
+  height: 60.0608329434%;
+  top: 3%;
+}
+
+#eastern:hover {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/easternDown.png');
 }
 
 @media only screen and (max-width: 940px) {
@@ -280,24 +345,21 @@
   #iceland {
     left: 0;
     top: 5%;
-    /* 90 * 472/327 * 0.6 */
-    width: 77.9449541284%;
+    width: 100%;
     height: 90%;
   }
 
   #uk {
     left: 0;
     top: 5%;
-    /* 90 * 284/385 * 0.6 */
-    width: 39.8337662338%;
+    width: 100%;
     height: 90%;
   }
   
   #pnw {
     left: 0;
     top: 5%;
-    /* 90 * 317/417 * 0.6 */
-    width: 41.0503597122%;
+    width: 100%;
     height: 90%;
   }
   
@@ -312,7 +374,7 @@
   #seAsia {
     left: 0;
     top: 5%;
-    /* 90 * 408/613 * 0.6 */
+    /* 90 * 814/1235 * 0.6 */
     width: 35.9412724307%;
     height: 90%;
   }
@@ -320,8 +382,43 @@
   #peru {
     left: 0;
     top: 5%;
-    /* 90 * 298/449 * 0.6 */
-    width: 35.8396436526%;
+    width: 100%;
+    height: 90%;
+  }
+
+  #nepal {
+    left: 0;
+    top: 5%;
+    /* 70 * 830/443 * 0.6 */
+    width: 100%;
+    height: 70%;
+  }
+
+  #sriLanka {
+    left: 0;
+    top: 5%;
+    width: 100%;
+    height: 90%;
+  }
+
+  #mAndI {
+    left: 0;
+    top: 5%;
+    width: 100%;
+    height: 90%;
+  }
+
+  #bvi {
+    left: 0;
+    top: 5%;
+    width: 100%;
+    height: 90%;
+  }
+
+  #eastern {
+    left: 0;
+    top: 5%;
+    width: 100%;
     height: 90%;
   }
 }
