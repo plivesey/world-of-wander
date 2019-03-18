@@ -85,17 +85,21 @@ class MapDetailPage extends Component {
 
   updateRowsBasedOnWindowSize() {
     if (window.innerWidth < 310) {
-      this.setState({ rowCount: 1 })
+      this.setState({ rowCount: 2 })
     } else if (window.innerWidth > 500 && window.innerWidth < 600) {
       this.setState({ rowCount: 3 })
-    } else if (window.innerWidth < 800) {
+    } else if (window.innerWidth < 600) {
       this.setState({ rowCount: 2 })
-    } else if (window.innerWidth < 1200) {
+    } else if (window.innerWidth < 800) {
       this.setState({ rowCount: 3 })
-    } else if (window.innerWidth < 1500) {
+    } else if (window.innerWidth < 1000) {
       this.setState({ rowCount: 4 })
+    } else if (window.innerWidth < 1200) {
+      this.setState({ rowCount: 6 })
+    } else if (window.innerWidth < 1400) {
+      this.setState({ rowCount: 8 })
     } else {
-      this.setState({ rowCount: 5 })
+      this.setState({ rowCount: 10 })
     }
   }
 
@@ -375,6 +379,7 @@ class ComeMeetUsLocationRow extends Component {
         <div className='comeMeetUsLocationRowRight'>
           <h3>{this.props.title}</h3>
           <p>{this.props.text}</p>
+          <p>{this.props.detailText}</p>
           <a href={this.props.link} target="_blank">Search</a>
         </div>
       </div>
@@ -394,13 +399,15 @@ class ComeMeetUs extends Component {
           <ComeMeetUsLocationRow
             image='https://plivesey.github.io/world-of-wander-images/posts/bvi/bvi.jpg'
             title='The Caribbean'
-            text='British Virgin Islands, April 2019'
+            text='British Virgin Islands'
+            detailText='April 2019'
             link='https://www.google.com/flights/#flt=SFO..2018-10-10*.SFO.2018-10-14;c:USD;e:1;sd:0;er:140768132.-709389298.222320682.-577553360;t:e'
           />
           <ComeMeetUsLocationRow
             image='https://plivesey.github.io/world-of-wander-images/posts/eastern/eastern.jpg'
             title='Eastern Europe'
-            text='Poland, Czechia, Romania and ?, Summer 2019'
+            text='Poland, Czechia, Romania and ?'
+            detailText='Summer 2019'
             link='https://www.google.com/flights/#flt=SFO..2019-03-16*.SFO.2019-03-20;c:USD;e:1;sd:0;er:440511814.125726696.555372620.389398571;t:e'
           />
         </div>
@@ -480,10 +487,10 @@ function LatestPosts() {
 function OneSecondVideo() {
   return (
     <div>
-      <h2 className='header2'>OUR TRAVELS IN 4 MINUTES</h2>
+      <h2 className='header2'>OUR TRAVELS IN 5 MINUTES</h2>
       <div className='flexCenterHorizontal'>
         <div id='oneSecondVideoContainer'>
-          <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/31DKTKdEyIA?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
+          <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/u2-RT8L82-4?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
             allowFullScreen />
         </div>
       </div>
