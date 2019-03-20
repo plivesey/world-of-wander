@@ -1,7 +1,7 @@
 import React from 'react'
 
 const sriLanka3 = {
-    id:  'srilanka-knuckles',
+    id: 'srilanka-knuckles',
     type: 'post',
     countryId: 'sriLanka',
     title: 'Hiking Knuckles Mountain Range',
@@ -51,7 +51,7 @@ const sriLanka3 = {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/knuckles3.jpg'
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/knuckles7.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/knuckles8.jpg']
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/knuckles7.jpg', 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/knuckles8.jpg']
         },
         {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/knuckles4.jpg'
@@ -86,12 +86,22 @@ const sriLanka3 = {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/peterhike.jpg'
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/waterfall1.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/waterfall2.jpg']
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/waterfall1.jpg', 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/waterfall2.jpg']
         },
         {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-knuckles/knuckles10.jpg'
         },
-]
+        {
+            text: (
+                <div>
+                    <b>More from Sri Lanka:</b><br />
+                    <a href="https://worldofwander.app/post/srilanka-south-coast">Hot &amp; Sandy in Sri Lanka: Colombo and the South Coast</a><br />
+                    <a href="https://worldofwander.app/post/srilanka-ella-kandy">Ella to Kandy: Trains and Tea Farms</a><br />
+                    <a href="https://worldofwander.app/post/srilanka-sigiriya">Peaceful Relaxation in Sigiriya</a><br />
+                </div>
+            )
+        }
+    ]
 }
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
 
 const sriLanka2 = {
-    id:  'srilanka-ella-kandy',
+    id: 'srilanka-ella-kandy',
     type: 'post',
     countryId: 'sriLanka',
     title: 'Ella to Kandy: Trains and Tea Farms',
@@ -44,7 +44,7 @@ const sriLanka2 = {
             detailText: 'The view of Ella Rock from Little Adam\'s Peak.'
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/peterella.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/alicetrain.jpg'],
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/peterella.jpg', 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/alicetrain.jpg'],
             detailText: 'Left, Peter at the Ella Rock viewpoint overlooking lush green hills. Right, Alice firmly holding onto the handrails on the train (don\'t worry, Mom!)'
         },
         {
@@ -59,7 +59,7 @@ const sriLanka2 = {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/ninearch3.jpg'
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/ninearch4.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/ninearch5.jpg']
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/ninearch4.jpg', 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/ninearch5.jpg']
         },
         {
             text: (
@@ -92,7 +92,7 @@ const sriLanka2 = {
             )
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/alicetea.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/waterfall.jpg'],
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/alicetea.jpg', 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/waterfall.jpg'],
             detailText: 'Left, walking through the tea plants at Blue Field. Right, our blisteringly hot hike up to Ravana Falls.'
         },
         {
@@ -118,12 +118,22 @@ const sriLanka2 = {
             detailText: 'I loved the painted train station signs.'
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/train1.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/train2.jpg']
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/train1.jpg', 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/train2.jpg']
         },
         {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-ella-kandy/train3.jpg'
         },
-]
+        {
+            text: (
+                <div>
+                    <b>More from Sri Lanka:</b><br />
+                    <a href="https://worldofwander.app/post/srilanka-south-coast">Hot &amp; Sandy in Sri Lanka: Colombo and the South Coast</a><br />
+                    <a href="https://worldofwander.app/post/srilanka-knuckles">Hiking Knuckles Mountain</a><br />
+                    <a href="https://worldofwander.app/post/srilanka-sigiriya">Peaceful Relaxation in Sigiriya</a><br />
+                </div>
+            )
+        }
+    ]
 }
 
 

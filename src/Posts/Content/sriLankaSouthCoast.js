@@ -8,7 +8,7 @@ const sriLankaSouthCoast = {
     longDate: 'March 14, 2019',
     month: 'Mar',
     date: '14',
-    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/sl1cover.jpg',
+    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/sl1cover.jpg',
     content: [
         {
             text: (
@@ -31,16 +31,16 @@ const sriLankaSouthCoast = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/park1.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/park1.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/park2.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/park2.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/galleface.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/galleface.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/galleface2.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/galleface2.jpg'
         },
         {
             text: (
@@ -58,10 +58,10 @@ const sriLankaSouthCoast = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/koggala.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/koggala.jpg'
         },
         {
-            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/koggala2.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/sriLanka-south-coast/galle.jpg']
+            images: ['https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/koggala2.jpg','https://plivesey.github.io/world-of-wander-images/posts/sriLanka/srilanka-south-coast/galle.jpg']
         },
         {
             text: (
@@ -81,10 +81,10 @@ const sriLankaSouthCoast = {
         {
             text: (
                 <div>
-                {/* <b>More from Sri Lanka:</b>
-                <a href="https://worldofwander.app/post/sriLanka-ella-kandy">Ella to Kandy: Trains and Tea Farms</a>
-                <a href="https://worldofwander.app/post/sriLanka-knuckles">Hiking Knuckles Mountain</a>
-                <a href="https://worldofwander.app/post/sriLanka-sigiriya">Peaceful Relaxation in Sigiriya</a> */}
+                <b>More from Sri Lanka:</b><br />
+                <a href="https://worldofwander.app/post/srilanka-ella-kandy">Ella to Kandy: Trains and Tea Farms</a><br />
+                <a href="https://worldofwander.app/post/srilanka-knuckles">Hiking Knuckles Mountain</a><br />
+                <a href="https://worldofwander.app/post/srilanka-sigiriya">Peaceful Relaxation in Sigiriya</a><br />
                 </div>
             )
         }
