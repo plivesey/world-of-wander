@@ -34,6 +34,7 @@ function MobileMap(props) {
   return (
     <div id='mobileMap'>
       <Slider {...settings}>
+        <CountryButton id='mAndI' onClick={props.onClick} />
         <CountryButton id='sriLanka' onClick={props.onClick} />
         <CountryButton id='nepal' onClick={props.onClick} />
         <CountryButton id='seAsia' onClick={props.onClick} />
@@ -42,7 +43,6 @@ function MobileMap(props) {
         <CountryButton id='uk' onClick={props.onClick} />
         <CountryButton id='iceland' onClick={props.onClick} />
         <CountryButton id='peru' onClick={props.onClick} />
-        <CountryButton id='mAndI' onClick={props.onClick} />
         <CountryButton id='bvi' onClick={props.onClick} />
         <CountryButton id='eastern' onClick={props.onClick} />
       </Slider>
@@ -231,7 +231,7 @@ class Map extends Component {
         id: 'mAndI',
         image: 'https://plivesey.github.io/world-of-wander-images/posts/mAndI/mAndI.jpg',
         title: (
-          <div>Malaysia & Indonesia<br/><br/>Coming Soon</div>
+          <div>Malaysia & Indonesia</div>
           )
       }
     } else {
