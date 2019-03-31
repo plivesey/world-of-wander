@@ -35,6 +35,7 @@ import sriLanka3 from './Content/sriLanka3.js'
 import sriLanka2 from './Content/sriLanka2.js'
 import sriLanka4 from './Content/sriLanka4.js'
 import langkawi from './Content/langkawi.js'
+import hundredBooks from './Content/100Books.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -81,6 +82,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    hundredBooks,
     langkawi,
     sriLanka4,
     sriLanka3,
