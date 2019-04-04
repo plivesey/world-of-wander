@@ -36,6 +36,7 @@ import sriLanka2 from './Content/sriLanka2.js'
 import sriLanka4 from './Content/sriLanka4.js'
 import langkawi from './Content/langkawi.js'
 import hundredBooks from './Content/100Books.js'
+import malaysia from './Content/Malaysia.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -82,6 +83,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    malaysia,
     hundredBooks,
     langkawi,
     sriLanka4,
