@@ -59,7 +59,7 @@ const malaysia = {
         },
         {
             text: (
-                <div>Everywhere we went, roads were smoothly paved and had distinct, newly painted lines and crosswalks. This felt revolutionary for Southeast Asia. When we were in the Thai islands, you'd best hold on tight to the motorbike and except roads in various states of construction or dilapidation. On Langkawi, a tiny island just south of those Thai islands, we never met a road that didn't look brand new. I couldn't believe how good the highways were in Kuala Lumpur.</div>
+                <div>Everywhere we went, roads were smoothly paved and had distinct, newly painted lines and crosswalks. This felt revolutionary for Southeast Asia. When we were in the Thai islands, you'd best hold on tight to the motorbike and accept roads in various states of construction or dilapidation. On Langkawi, a tiny island just south of those Thai islands, we never met a road that didn't look brand new. I couldn't believe how good the highways were in Kuala Lumpur.</div>
             )
         },
         {
