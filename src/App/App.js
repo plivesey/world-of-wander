@@ -128,7 +128,7 @@ class MapDetailPage extends Component {
     if (includeLoadMore) {
       blogPostRows.push(
         (
-          <BlogPostReadMoreRow type={this.props.countryId} />
+          <BlogPostReadMoreRow type={this.props.countryId} key='readMore' />
         )
       )
     }
@@ -142,11 +142,11 @@ class MapDetailPage extends Component {
           <div id='detailPageTextContainer'>
             <h2 className='header2' id='detailPageTextContainerHeader'>{this.props.title}</h2>
             {blogPostRows}
+            <button id='mapDetailBack' onClick={this.props.onClick}>
+              <img src='https://plivesey.github.io/world-of-wander-images/home/closeX.png' alt='X'/>
+            </button>
           </div>
         </div>
-        <button id='mapDetailBack' onClick={this.props.onClick}>
-          &lt; Back
-      </button>
       </div>
     )
   }
@@ -190,7 +190,7 @@ class Map extends Component {
       return {
         id: 'uk',
         image: 'https://plivesey.github.io/world-of-wander-images/posts/uk/UK.jpg',
-        title: 'U.K.'
+        title: 'British Isles'
       }
     } else if (this.state.highlightedCountry === 'seAsia') {
       return {

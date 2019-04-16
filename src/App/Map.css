@@ -30,14 +30,14 @@
 #mapDetailContainer {
   position: relative;
   width: 100%;
-  height: calc(100% - 4em);
+  height: 100%;
 
   display: flex;
   flex-direction: row;
 }
 
 #detailPageTextContainerHeader {
-  margin: 20px 0;
+  margin: 20px 20px;
 }
 
 #mapDetailPage {
@@ -49,24 +49,6 @@
   transition-property: top;
   transition-duration: 0.5s;
   transition-timing-function: ease;
-}
-
-#mapDetailBack {
-  position: relative;
-  height: 2em;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 1.5em;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: lowercase;
-  color: #3E3E3E;
-  margin: 0;
-  background: transparent;
-  border: none;
-  cursor: pointer;
 }
 
 #mapDetailBack:focus {
@@ -94,6 +76,24 @@
   flex-direction: column;
   justify-content: center;
   min-width: 40%;
+}
+
+#mapDetailBack {
+  display: inline-block;
+  position: absolute;
+  top: calc(3% + 32px);
+  right: calc(3% + 20px);
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#mapDetailBack img {
+  display: block;
+  height: 40px;
+  width: 40px;
 }
 
 #detailPageImage {
@@ -310,18 +310,8 @@
   }
 
   #detailPageTextContainerHeader {
-    margin: 10px 0;
+    margin: 10px 24px;
     font-size: 2em;
-  }
-
-  #mapDetailBack {
-    position: relative;
-    height: 1.2em;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    line-height: normal;
-    font-size: 0.8em;
   }
 }
 
@@ -340,6 +330,20 @@
 
   .CountryButton {
     position: relative;
+  }
+
+  #mapDetailBack {
+    display: inline-block;
+    position: absolute;
+    top: calc(3% + 16px);
+    right: calc(3% + 16px);
+    height: 30px;
+    width: 30px;
+  }
+
+  #mapDetailBack img {
+    height: 30px;
+    width: 30px;
   }
 
   #iceland {
