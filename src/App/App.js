@@ -487,10 +487,10 @@ function LatestPosts() {
 function OneSecondVideo() {
   return (
     <div>
-      <h2 className='header2'>OUR TRAVELS IN 5 MINUTES</h2>
+      <h2 className='header2'>OUR TRAVELS IN 6 MINUTES</h2>
       <div className='flexCenterHorizontal'>
         <div id='oneSecondVideoContainer'>
-          <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/u2-RT8L82-4?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
+          <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/kxjOuIiu7YA?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
             allowFullScreen />
         </div>
       </div>
