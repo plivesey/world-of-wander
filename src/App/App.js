@@ -203,7 +203,7 @@ class Map extends Component {
         id: 'bvi',
         image: 'https://plivesey.github.io/world-of-wander-images/posts/bvi/bvi.jpg',
         title: (
-          <div>Puerto Rico & Virgin Islands<br/><br/>Coming Soon</div>
+          <div>Puerto Rico & Virgin Islands</div>
           )
       }
     } else if (this.state.highlightedCountry === 'sriLanka') {
