@@ -17,7 +17,7 @@ const java = {
         },
         {
             image: 'https://plivesey.github.io/world-of-wander-images/posts/mAndI/indonesia-east-java/IndonesiavsUS.jpg',
-            detailText:'<a href="https://www.mylifeelsewhere.com/country-size-comparison/united-states/indonesia">Source</a>'
+            detailText:(<a href="https://www.mylifeelsewhere.com/country-size-comparison/united-states/indonesia">Source</a>)
         },
         {
             text: (
