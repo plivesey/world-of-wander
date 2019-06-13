@@ -40,6 +40,7 @@ import malaysia from './Content/Malaysia.js'
 import java from './Content/Java.js'
 import baliPhotos from './Content/BaliPhotos.js'
 import bviPhotos from './Content/bviPhotos.js'
+import netherlands from './Content/netherlands.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -56,8 +57,8 @@ export function countryTitleForId(id) {
         return 'Pacific Northwest'
     } else if (id === 'seAsia') {
         return 'S.E. Asia'
-    } else if (id === 'france') {
-        return 'France'
+    } else if (id === 'westernEurope') {
+        return 'Western Europe'
     } else if (id === 'uk') {
         return 'British Isles'
     } else if (id === 'iceland') {
@@ -86,6 +87,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    netherlands,
     bviPhotos,
     baliPhotos,
     java,

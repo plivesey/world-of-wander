@@ -3,12 +3,12 @@ import React from 'react'
 const tmb = {
     id: 'hiking-tour-du-mont-blanc',
     type: 'post',
-    countryId: 'france',
+    countryId: 'westernEurope',
     title: 'Hiking the Tour du Mont Blanc',
     longDate: 'August 3, 2018',
     month: 'Aug',
     date: '3',
-    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/CoverTMB.jpg',
+    coverImage: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/CoverTMB.jpg',
     content: [
         {
             text: (
@@ -45,7 +45,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/Cows.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/Cows.jpg',
             detailText: 'Met a lot of pretty cows along the way!'
         },
         {
@@ -80,7 +80,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/day2TMB.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/day2TMB.jpg',
             detailText: 'The Stairmaster.'
         },
         {
@@ -99,7 +99,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/pasta.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/pasta.jpg'
         },
         {
             text: (
@@ -125,7 +125,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/View1.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/View1.jpg'
         },
         {
             text: (
@@ -146,7 +146,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/Cloudy.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/Cloudy.jpg',
             detailText: 'Carol looking at the clouds where Mont Blanc is supposed to be.'
         },
         {
@@ -178,10 +178,10 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/View2.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/View2.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/selfie.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/selfie.jpg'
         },
         {
             text: (
@@ -199,7 +199,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/Bonatti.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/Bonatti.jpg',
             detailText: 'The incredible view from Rifugio Bonatti.'
         },
         {
@@ -239,7 +239,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/Lake.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/Lake.jpg',
             detailText: 'The turquoise lake in Champex.'
         },
         {
@@ -274,10 +274,10 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/panorama.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/panorama.jpg'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/Cow.jpg'
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/Cow.jpg'
         },
         {
             text: (
@@ -308,7 +308,7 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/MontBlanc.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/MontBlanc.jpg',
             detailText: 'Finally, Mont Blanc!'
         },
         {
@@ -330,11 +330,11 @@ const tmb = {
             )
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/TheEnd.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/TheEnd.jpg',
             detailText: 'The end is in sight!'
         },
         {
-            image: 'https://plivesey.github.io/world-of-wander-images/posts/france/tmb/Chamonix.jpg',
+            image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/tmb/Chamonix.jpg',
             detailText: 'Arriving back in Chamonix.'
         },
     ]

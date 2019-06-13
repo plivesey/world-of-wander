@@ -34,12 +34,12 @@ function MobileMap(props) {
   return (
     <div id='mobileMap'>
       <Slider {...settings}>
+        <CountryButton id='westernEurope' onClick={props.onClick} />
         <CountryButton id='mAndI' onClick={props.onClick} />
         <CountryButton id='sriLanka' onClick={props.onClick} />
         <CountryButton id='nepal' onClick={props.onClick} />
         <CountryButton id='seAsia' onClick={props.onClick} />
         <CountryButton id='pnw' onClick={props.onClick} />
-        <CountryButton id='france' onClick={props.onClick} />
         <CountryButton id='uk' onClick={props.onClick} />
         <CountryButton id='iceland' onClick={props.onClick} />
         <CountryButton id='peru' onClick={props.onClick} />
@@ -55,7 +55,7 @@ function DesktopMap(props) {
     <div id='desktopMap'>
       <CountryButton id='pnw' onClick={props.onClick} />
       <CountryButton id='seAsia' onClick={props.onClick} />
-      <CountryButton id='france' onClick={props.onClick} />
+      <CountryButton id='westernEurope' onClick={props.onClick} />
       <CountryButton id='uk' onClick={props.onClick} />
       <CountryButton id='iceland' onClick={props.onClick} />
       <CountryButton id='peru' onClick={props.onClick} />
@@ -174,11 +174,11 @@ class Map extends Component {
         image: 'https://plivesey.github.io/world-of-wander-images/posts/peru/Peru.jpg',
         title: 'Peru'
       }
-    } else if (this.state.highlightedCountry === 'france') {
+    } else if (this.state.highlightedCountry === 'westernEurope') {
       return {
-        id: 'france',
-        image: 'https://plivesey.github.io/world-of-wander-images/posts/france/France.jpg',
-        title: 'France'
+        id: 'westernEurope',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/westernEurope/France.jpg',
+        title: 'westernEurope'
       }
     } else if (this.state.highlightedCountry === 'pnw') {
       return {
@@ -267,7 +267,7 @@ class Map extends Component {
         <link rel="preload" href={this.highlightImageForCountryId('iceland')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('uk')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('peru')} as="image" />
-        <link rel="preload" href={this.highlightImageForCountryId('france')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('westernEurope')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('seAsia')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('eastern')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('mAndI')} as="image" />
@@ -304,8 +304,8 @@ class Map extends Component {
       return 'https://plivesey.github.io/world-of-wander-images/home/peruDown.png'
     } else if (id === 'pnw') {
       return 'https://plivesey.github.io/world-of-wander-images/home/washingtonDown.png'
-    } else if (id === 'france') {
-      return 'https://plivesey.github.io/world-of-wander-images/home/franceDown.png'
+    } else if (id === 'westernEurope') {
+      return 'https://plivesey.github.io/world-of-wander-images/home/westernEuropeDown.png'
     } else if (id === 'seAsia') {
       return 'https://plivesey.github.io/world-of-wander-images/home/seAsiaDown.png'
     } else if (id === 'bvi') {

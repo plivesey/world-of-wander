@@ -195,17 +195,17 @@
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/washingtonDown.png');
 }
 
-#france {
-  background-image: url('https://plivesey.github.io/world-of-wander-images/home/france.png');
+#westernEurope {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/westernEurope.png');
   left: 32%;
   width: 17%;
-  /* 17 * 399/444 * 2 */
-  height: 30.5540540541%;
+  /* 17 * 1179/1198 * 2 */
+  height: 33.4607679466%;
   top: 25%;
 }
 
-#france:hover {
-  background-image: url('https://plivesey.github.io/world-of-wander-images/home/franceDown.png');
+#westernEurope:hover {
+  background-image: url('https://plivesey.github.io/world-of-wander-images/home/westernEuropeDown.png');
 }
 
 #seAsia {
@@ -367,11 +367,11 @@
     height: 90%;
   }
   
-  #france {
+  #westernEurope {
     left: 0;
     top: 5%;
-    /* 90 * 444/399 * 0.6 */
-    width: 60.0902255639%;
+    /* 90 * 1179/1198 * 0.6 */
+    width: 53.143572621%;
     height: 90%;
   }
   
