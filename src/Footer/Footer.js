@@ -18,10 +18,10 @@ function Footer() {
             </div>
             <div className='flexCenterHorizontal'>
                 <div id='instagramContainer'>
-                    <InstagramPicture instagramId='BuioBQyHnHn' image='Insta1.png' />
-                    <InstagramPicture instagramId='BuS4vFGH5f_' image='Insta2.png' />
-                    <InstagramPicture instagramId='BuVJZyFHcgT' image='Insta3.png' />
-                    <InstagramPicture instagramId='BuNlLxhnq13' image='Insta4.png' />
+                    <InstagramPicture instagramId='Bxfhl86BovV' image='Insta1.png' />
+                    <InstagramPicture instagramId='BxTGII-BIcn' image='Insta2.png' />
+                    <InstagramPicture instagramId='BxYALWEBFyV' image='Insta3.png' />
+                    <InstagramPicture instagramId='BxQtKnFhx18' image='Insta4.png' />
                 </div>
             </div>
         </div>
