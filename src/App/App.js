@@ -44,7 +44,7 @@ function MobileMap(props) {
         <CountryButton id='iceland' onClick={props.onClick} />
         <CountryButton id='peru' onClick={props.onClick} />
         <CountryButton id='bvi' onClick={props.onClick} />
-        <CountryButton id='eastern' onClick={props.onClick} />
+        <CountryButton id='easternEurope' onClick={props.onClick} />
       </Slider>
     </div>
   )
@@ -63,7 +63,7 @@ function DesktopMap(props) {
       <CountryButton id='nepal' onClick={props.onClick} />
       <CountryButton id='mAndI' onClick={props.onClick} />
       <CountryButton id='bvi' onClick={props.onClick} />
-      <CountryButton id='eastern' onClick={props.onClick} />
+      <CountryButton id='easternEurope' onClick={props.onClick} />
     </div>
   )
 }
@@ -218,12 +218,12 @@ class Map extends Component {
         image: 'https://plivesey.github.io/world-of-wander-images/posts/nepal/nepal.jpg',
         title: 'Nepal'
       }
-    } else if (this.state.highlightedCountry === 'eastern') {
+    } else if (this.state.highlightedCountry === 'easternEurope') {
       return {
-        id: 'eastern',
-        image: 'https://plivesey.github.io/world-of-wander-images/posts/eastern/eastern.jpg',
+        id: 'easternEurope',
+        image: 'https://plivesey.github.io/world-of-wander-images/posts/easternEurope/eastern.jpg',
         title: (
-          <div>Eastern Europe<br/><br/>Coming Soon</div>
+          <div>Eastern Europe</div>
           )
       }
     } else if (this.state.highlightedCountry === 'mAndI') {
@@ -269,7 +269,7 @@ class Map extends Component {
         <link rel="preload" href={this.highlightImageForCountryId('peru')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('westernEurope')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('seAsia')} as="image" />
-        <link rel="preload" href={this.highlightImageForCountryId('eastern')} as="image" />
+        <link rel="preload" href={this.highlightImageForCountryId('easternEurope')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('mAndI')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('nepal')} as="image" />
         <link rel="preload" href={this.highlightImageForCountryId('sriLanka')} as="image" />
@@ -310,7 +310,7 @@ class Map extends Component {
       return 'https://plivesey.github.io/world-of-wander-images/home/seAsiaDown.png'
     } else if (id === 'bvi') {
       return 'https://plivesey.github.io/world-of-wander-images/home/bviDown.png'
-    } else if (id === 'eastern') {
+    } else if (id === 'easternEurope') {
       return 'https://plivesey.github.io/world-of-wander-images/home/easternDown.png'
     } else if (id === 'sriLanka') {
       return 'https://plivesey.github.io/world-of-wander-images/home/sriLankaDown.png'

@@ -286,7 +286,7 @@
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/bviDown.png');
 }
 
-#eastern {
+#easternEurope {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/eastern.png');
   left: 73%;
   width: 25%;
@@ -295,7 +295,7 @@
   top: 3%;
 }
 
-#eastern:hover {
+#easternEurope:hover {
   background-image: url('https://plivesey.github.io/world-of-wander-images/home/easternDown.png');
 }
 
@@ -419,7 +419,7 @@
     height: 90%;
   }
 
-  #eastern {
+  #easternEurope {
     left: 0;
     top: 5%;
     width: 100%;

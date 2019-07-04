@@ -41,6 +41,7 @@ import java from './Content/Java.js'
 import baliPhotos from './Content/BaliPhotos.js'
 import bviPhotos from './Content/bviPhotos.js'
 import netherlands from './Content/netherlands.js'
+import prague from './Content/prague.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -73,7 +74,7 @@ export function countryTitleForId(id) {
         return 'Sri Lanka'
     } else if (id === 'mAndI') {
         return 'Malaysia & Indonesia'
-    } else if (id === 'eastern') {
+    } else if (id === 'easternEurope') {
         return 'Eastern Europe'
     } else {
         return '?'
@@ -87,6 +88,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    prague,
     netherlands,
     bviPhotos,
     baliPhotos,
