@@ -42,6 +42,7 @@ import baliPhotos from './Content/BaliPhotos.js'
 import bviPhotos from './Content/bviPhotos.js'
 import netherlands from './Content/netherlands.js'
 import prague from './Content/prague.js'
+import bavaria from './Content/Bavaria.js';
 
 export function postForId(id) {
     if (id === 'about') {
@@ -88,6 +89,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    bavaria,
     prague,
     netherlands,
     bviPhotos,
