@@ -44,6 +44,7 @@ import netherlands from './Content/netherlands.js'
 import prague from './Content/prague.js'
 import bavaria from './Content/Bavaria.js'
 import slovenia from './Content/Slovenia.js'
+import balkans from './Content/balkans.js'
 
 export function postForId(id) {
     if (id === 'about') {
@@ -90,6 +91,7 @@ export function postsForCountry(countryId) {
 }
 
 export const allPosts = [
+    balkans,
     slovenia,
     bavaria,
     prague,

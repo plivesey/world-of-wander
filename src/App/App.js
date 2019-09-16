@@ -365,56 +365,56 @@ class Map extends Component {
   }
 }
 
-class ComeMeetUsLocationRow extends Component {
-  render() {
-    return (
-      <div className='comeMeetUsLocationRow'>
-        <a
-          className='comeMeetUsLocationRowLeft'
-          href={this.props.link} style={{ backgroundImage: "url(" + this.props.image + ")" }}
-          target="_blank"
-        >
-          Search
-        </a>
-        <div className='comeMeetUsLocationRowRight'>
-          <h3>{this.props.title}</h3>
-          <p>{this.props.text}</p>
-          <p>{this.props.detailText}</p>
-          <a href={this.props.link} target="_blank">Search</a>
-        </div>
-      </div>
-    )
-  }
-}
+// class ComeMeetUsLocationRow extends Component {
+//   render() {
+//     return (
+//       <div className='comeMeetUsLocationRow'>
+//         <a
+//           className='comeMeetUsLocationRowLeft'
+//           href={this.props.link} style={{ backgroundImage: "url(" + this.props.image + ")" }}
+//           target="_blank"
+//         >
+//           Search
+//         </a>
+//         <div className='comeMeetUsLocationRowRight'>
+//           <h3>{this.props.title}</h3>
+//           <p>{this.props.text}</p>
+//           <p>{this.props.detailText}</p>
+//           <a href={this.props.link} target="_blank">Search</a>
+//         </div>
+//       </div>
+//     )
+//   }
+// }
 
-class ComeMeetUs extends Component {
-  render() {
-    return (
-      <div id='comeMeetUs'>
-        <h2 className='header2'>COME MEET US</h2>
-        <div id='comeMeetUsText'>
-          We would love for friends and family to join us for parts of our trip! We are extremely flexible, and here are the parts of the world we're going to next:
-        </div>
-        <div className='comeMeetUsLocationContainer'>
-          <ComeMeetUsLocationRow
-            image='https://plivesey.github.io/world-of-wander-images/posts/bvi/bvi.jpg'
-            title='The Caribbean'
-            text='British Virgin Islands'
-            detailText='April 2019'
-            link='https://www.google.com/flights/#flt=SFO..2018-10-10*.SFO.2018-10-14;c:USD;e:1;sd:0;er:140768132.-709389298.222320682.-577553360;t:e'
-          />
-          <ComeMeetUsLocationRow
-            image='https://plivesey.github.io/world-of-wander-images/posts/eastern/eastern.jpg'
-            title='Eastern Europe'
-            text='Poland, Czechia, Romania and ?'
-            detailText='Summer 2019'
-            link='https://www.google.com/flights/#flt=SFO..2019-03-16*.SFO.2019-03-20;c:USD;e:1;sd:0;er:440511814.125726696.555372620.389398571;t:e'
-          />
-        </div>
-      </div>
-    )
-  }
-}
+// class ComeMeetUs extends Component {
+//   render() {
+//     return (
+//       <div id='comeMeetUs'>
+//         <h2 className='header2'>COME MEET US</h2>
+//         <div id='comeMeetUsText'>
+//           We would love for friends and family to join us for parts of our trip! We are extremely flexible, and here are the parts of the world we're going to next:
+//         </div>
+//         <div className='comeMeetUsLocationContainer'>
+//           <ComeMeetUsLocationRow
+//             image='https://plivesey.github.io/world-of-wander-images/posts/bvi/bvi.jpg'
+//             title='The Caribbean'
+//             text='British Virgin Islands'
+//             detailText='April 2019'
+//             link='https://www.google.com/flights/#flt=SFO..2018-10-10*.SFO.2018-10-14;c:USD;e:1;sd:0;er:140768132.-709389298.222320682.-577553360;t:e'
+//           />
+//           <ComeMeetUsLocationRow
+//             image='https://plivesey.github.io/world-of-wander-images/posts/eastern/eastern.jpg'
+//             title='Eastern Europe'
+//             text='Poland, Czechia, Romania and ?'
+//             detailText='Summer 2019'
+//             link='https://www.google.com/flights/#flt=SFO..2019-03-16*.SFO.2019-03-20;c:USD;e:1;sd:0;er:440511814.125726696.555372620.389398571;t:e'
+//           />
+//         </div>
+//       </div>
+//     )
+//   }
+// }
 
 class StayUpToDate extends Component {
   signUp() {
@@ -505,7 +505,7 @@ class App extends Component {
         <HeaderBar />
         <Map />
         <OneSecondVideo />
-        <ComeMeetUs />
+        {/* <ComeMeetUs /> */}
         <StayUpToDate />
         <LatestPosts />
         <Footer />
