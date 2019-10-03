@@ -14,7 +14,7 @@ function Footer() {
     return (
         <div id='footer'>
             <div id='footerText'>
-                Follow <a id='instagramLink' href='https://www.instagram.com/acavery/'>@acavery</a> on Instagram to see where we are
+                Follow <a id='instagramLink' href='https://www.instagram.com/acavery/'>@acavery</a> on Instagram
             </div>
             <div className='flexCenterHorizontal'>
                 <div id='instagramContainer'>

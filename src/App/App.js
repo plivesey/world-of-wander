@@ -418,10 +418,9 @@ class Map extends Component {
 
 class StayUpToDate extends Component {
   signUp() {
-    const email = 'alicecamilleavery@gmail.com'
-    const subject = 'Sign me up for World of Wander Updates'
-    const message = 'Just send the email and we\'ll add you! 😀 🎉'
-    const mailToLink = 'mailto:' + email + '?subject=' + subject + '&body=' + message
+    const email = 'alicecamilleavery@gmail.com,plivesey453@gmail.com'
+    const subject = 'I want to travel!'
+    const mailToLink = 'mailto:' + email + '?subject=' + subject
 
     window.open(mailToLink, 'emailWindow')
   }
@@ -429,8 +428,8 @@ class StayUpToDate extends Component {
   render() {
     return (
       <div id='stayUpToDate' style={{ backgroundImage: 'url("https://plivesey.github.io/world-of-wander-images/home/stayWithUs.jpg")' }}>
-        <h2 className='header2'>STAY UP TO DATE</h2>
-        <button onClick={() => { this.signUp() }}>Get Emails From Us</button>
+        <h2 className='header2'>WANT TO LEARN MORE?</h2>
+        <button onClick={() => { this.signUp() }}>Contact Us</button>
       </div>
     )
   }
@@ -487,10 +486,10 @@ function LatestPosts() {
 function OneSecondVideo() {
   return (
     <div>
-      <h2 className='header2'>OUR TRAVELS IN 6 MINUTES</h2>
+      <h2 className='header2'>OUR TRAVELS IN 8 MINUTES</h2>
       <div className='flexCenterHorizontal'>
         <div id='oneSecondVideoContainer'>
-          <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/kxjOuIiu7YA?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
+          <iframe title='1SE Video' id='oneSecondVideoIFrame' src="https://www.youtube-nocookie.com/embed/V1bfX5Kt0dg?rel=0" frameBorder="0" allow="autoplay; encrypted-media"
             allowFullScreen />
         </div>
       </div>
